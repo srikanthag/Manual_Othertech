@@ -1,0 +1,30 @@
+1. What is ADB?
+ADB is the Android Debug Bridge, a command line tool used to communicate with Android devices.
+
+
+2. What are some useful commands that can be used with ADB?
+There are a number of useful commands that can be used with ADB, including:
+
+– adb devices: This command will list all of the devices that are currently connected to the computer.
+– adb shell: This command will open a shell on the device.
+– adb install: This command will install an APK on the device.
+– adb uninstall: This command will uninstall an APK from the device.
+– adb pull: This command will pull a file from the device.
+– adb push: This command will push a file to the device..
+
+
+3. What happens when you type adb kill-server followed by adb start-server?
+The adb kill-server command shuts down the Android Debug Bridge server, while the adb start-server command starts it up again.
+
+
+4. What is reboot to recovery?
+The recovery mode is used to change or fix any problems with the software that can't be done within the OS.
+
+
+5. Fastboot
+Fastboot Mode is a mode of controlling the phone and operating system via command line and ADB interface
+
+
+
+
+

@@ -1,0 +1,80 @@
+Git: :Local repository
+Git hub: Remote repository
+
+git init : initiate the local repository
+git remote add origin "https://github.com/srikanthag/python.git"
+git pull origin master
+git status: 
+git add file path
+git commit -m "commiting first file"
+git log : check committed files
+
+
+
+Git: Git is a free and open source distributed code management and Version control system.
+
+ config: This command sets the author name and email address respectively to be used with your commits.
+ git config – global user.name “[name]”
+ git config – global user.email “[email address]”
+
+ init: This command is used to start a new repository.
+ git init [repository name]
+
+ add: This command adds a file to the staging area.
+ git add (file name)
+
+ commit: This command records or snapshots the file permanently in the version history.
+ git commit -m “[ Type in the commit message]”
+
+ remote: This command is used to connect your local repository to the remote server.
+ git remote add origin https://github.com/srikanthag/TYSS.git
+
+ push: This command sends the committed changes of master branch to your remote repository.
+ git push -u origin master
+
+ version
+ git --version
+
+ clone: This command is used to obtain a repository from an existing URL.
+ git clone [url]
+
+ status: This command lists all the files that have to be committed.
+ git status
+
+ git log: This command is used to list the version history for the current branch
+ git log
+
+ git pull: This command fetches and merges changes on the remote server to your working directory.
+ git pull [Repository Link]
+
+ merge: This command merges the specified branch’s history into the current branch.
+ git merge [branch name]
+
+ branch: This command lists all the local branches in the current repository.
+ git branch <branch-name>
+
+ Viewing branches
+ git branch
+
+ git checkout: This command creates a new branch and also switches to it.
+ git checkout <name-of-your-branch>
+
+ revert(undo)
+ git revert
+
+ reset
+ git reset [file]
+
+ delete: This command deletes the file from your working directory and stages the deletion.
+ git rm [file]
+
+ show: show current changes
+ git show [commit]
+
+'''git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/srikanthag/new.git
+git push -u origin main'''
+

@@ -1,0 +1,77 @@
+Jenkins
+Jenkins is a open source of automation server. It helps to automate the part of the software dev builds, Testing and deploying
+continuous integration and continuous delivery
+
+Setup
+download java version 17
+download jenkins.war filr
+run cmd from download and run command "java -jar jenkins.war"
+http://localhost:8080/
+add password from cmd where ran "java -jar jenkins.war"
+install plugins
+
+user name: admin
+password: srikanth
+url: http://localhost:8080/
+
+
+
+Execute windows batch command
+
+===============================================================================================================
+######################################## Interview questions #########################################################
+
+1. What is Jenkins?
+Jenkins is an open-source automation server used for building, testing, and deploying software.
+
+
+2. Explain the key features of Jenkins.
+Continuous Integration and Continuous Deployment
+Extensibility with plugins
+Easy installation and configuration
+Distributed builds
+
+3. How does Jenkins support Continuous Integration (CI)?
+Jenkins integrates code changes from multiple contributors into a shared repository, triggering automated builds and tests.
+
+4. Explain the concept of a Jenkins pipeline.
+A Jenkins pipeline is a suite of plugins that supports implementing and integrating continuous delivery pipelines into Jenkins.
+
+5. What is a Jenkinsfile?
+A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is typically checked into source control.
+
+6. How can you secure Jenkins?
+Use authentication and authorization.
+Set up security realms and manage user permissions.
+Enable HTTPS for secure communication.
+
+7. Explain the term "Artifact" in Jenkins.
+An artifact is a deployable component of your application. In Jenkins, artifacts are often the output of a build process, such as JAR or WAR files.
+
+8. How does Jenkins integrate with version control systems?
+Jenkins can connect to version control systems like Git, Subversion, and others to trigger builds based on code changes.
+
+9. What is a Jenkins plugin?
+Jenkins plugins are extensions that enhance Jenkins functionality. They can be used to integrate Jenkins with other tools or to
+provide additional features.
+
+10. Explain the difference between Jenkins and Hudson.
+Jenkins forked from Hudson due to a dispute, and both are CI/CD tools. Jenkins has since evolved with more features and a larger community.
+
+11. How can you schedule jobs in Jenkins?
+Jenkins jobs can be scheduled using the built-in scheduler or using cron syntax.
+
+12. What is the purpose of the Jenkins workspace?
+The Jenkins workspace is a directory on the master or agent where Jenkins stores files related to a specific job during its execution.
+
+13. Explain the term "Jenkins slave" or "Jenkins agent."
+A Jenkins slave (or agent) is a machine that is configured to offload build projects from the master. It allows for parallel execution
+of jobs on different machines.
+
+14. How can you back up Jenkins configurations and data?
+Jenkins configurations and data can be backed up by copying the JENKINS_HOME directory or by using the Jenkins Backup Plugin.
+
+15. What are some common challenges in Jenkins and how can they be mitigated?
+Challenges may include plugin compatibility issues, long build times, and security concerns.
+Solutions may involve updating plugins, optimizing build processes, and implementing secure configurations.
+

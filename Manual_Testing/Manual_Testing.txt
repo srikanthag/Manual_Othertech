@@ -1,0 +1,1524 @@
+MANUAL TESTING (SOFTWARE TESTING)
+
+What is Software Testing?
+1. The Process of identifying defects in the software is called software testing.
+2. Verifying functionality of an application against the requirement specification is called Software testing.
+3. Execution of the program with intent to finding defects in the software is called as Software testing.
+
+Why we do Software testing?
+* Every software supports business, if there are any defects in the software it will affect Customer Business. So before we use software for the business all the bugs should be found and should be fixed that is software must be well tested.
+*  To improve the quality of the software.
+* To check whether the software is working according to the customer requirement.
+
+================================================================================================================
+
+Types of software testing:
+1. White box testing/Unit testing/Open box/Glass box/Transparent/Structural/Mutation: Testing each and every line of the code is called as WBT. It is done by the development engineer. Since the Code is visible it is called open box/glass box or transparent. The smallest unit of the Program is single line of the code. Since developers are testing each and every line of the code it is called unit testing.
+
+Why TE should never involve in fixing the defect?
+ If they spend time in fixing one bug he will not get time to test remaining features.
+ If he spends time in fixing one bug he will not get time to catch the remaining bugs.
+ Chances are there fixing one bug might introduce lot of other bugs.
+ So TE should never involve in fixing the defects.
+
+
+2. Black box testing/Closed box/Functional/Behavioural:Verifying the functionality of an application against the requirement specification is called as BBT. It is done by the TE. Since the code is not visible (TE will never see the code) it is called Closed box testing.
+
+3. Grey box testing:
+Combination of both WBT and BBT is called as GBT. It can be done by either DE or TE. Black box testing/Closed box/Functional/Behavioural:
+Verifying the functionality of an application against the requirement specification is called as BBT. It is done by the TE.
+
+================================================================================================================
+
+## What is the process of functional testing?
+Testers follow the following steps in the functional testing:
+* Tester does verification of the requirement specification in the software application.
+* After analysis, the requirement specification tester will make a plan.
+* After planning the tests, the tester will design the test case.
+* After designing the test, case tester will make a document of the traceability matrix.
+* The tester will execute the test case design.
+* Analysis of the coverage to examine the covered testing area of the application.
+* Defect management should do to manage defect resolving.
+
+================================================================================================================
+
+## What to test in functional testing? Explain
+The main objective of functional testing is checking the functionality of the software system. It concentrates on:
+* Basic Usability: Functional Testing involves the usability testing of the system. It checks whether a user can navigate freely without any difficulty through screens.
+* Accessibility: Functional testing test the accessibility of the function.
+* Mainline function: It focuses on testing the main feature.
+* Error Condition: Functional testing is used to check the error condition. It checks whether the error message displayed
+
+
+## Explain the complete process to perform functional testing.
+* There is a need to understand the software requirement.
+* Identify test input data
+* Compute the expected outcome with the selected input values.
+* Execute test cases
+* Comparison between the actual and the computed result
+
+================================================================================================================
+
+Types of BBT:
+1. Functionality testing
+2.Integration testing
+3.System testing
+4.Acceptance testing
+5.Smoke testing
+6. ADHOC testing
+7.Compatibility testing
+8. Usability testing
+9. Performance testing
+10. Globalization testing
+11. Accessibility testing
+12. Reliability testing
+13. Regression testing
+
+================================================================================================================
+
+1. Functionality testing/Field level testing/Component testing:
+Testing each and every component thoroughly against requirement specification is called functionality testing. Here component means it can be any link, radio button, check box, normal buttons, scroll bar etc.... Thoroughly mean by entering all possible inputs or cases or scenarios.
+
+Why the requirement should be numbered?
+ There will be clarity in the requirement.
+ Communication between customer, developer and testing
+team becomes very much smooth.
+ It will be easy to understand.
+ Requirement becomes measurable and traceable.
+How to test thoroughly?
+ Always start testing the application with valid data.
+ If the application is working for valid data, then only test for
+invalid data.
+ If the feature is not working for one of the invalid data we
+can still continue testing for some more invalid data.
+ Any testing can be done in three ways:
+A. Over testing/Exhaustive testing: Testing the features with
+same scenarios in diffrent ways and the scenarios which
+doesn't make any sense is called OT.
+Eg: 100Rs, Rs100,50ps, 100cr
+If we do the same testing it is waste of time.
+B. Under testing: Testing the feature with those insufficient
+set of scenarios is called under testing.
+Eg: 100,0,100Rs
+If we do this we are going to miss lot of defects.
+C. Optimized testing: Testing the application with those
+scenarios which make sense is called optimized testing.
+a. Positive functionality testing: Testing the application by
+entering valid or expected data is called as positive FT.
+b. Negative functionality testing: Testing the application by
+entering invalid or unexpected data is called as negative FT.
+Note:
+ TE should never assume or propose the requirement.
+ If you have any queries or question in the requirement
+interact with project manager, developer, business analyst
+and customer.
+
+================================================================================================================
+
+2. Integration testing: Testing the data flow or interfaces
+between the modules is called as Integration testing.
+How to do Integration testing
+A. Understanding the application is very important
+a. Understand in depth how each and every module works.
+b. Also understand how each and every module is related.
+B. Identify the scenarios.
+C. Prioritize the scenarios.
+D. Document the scenarios as per prioritization.
+E. Execute the scenarios.
+F. If you find any defect , communicate defect to the developer.
+ Positive integration testing: Enter the amount which is
+less than or equal to the balance and if it is received by the
+receiver then it is called Positive integration testing.
+ Negative integration testing: Enter the amount which is
+more than the balance if the receiver is not able to receive
+the amount then we can say that Negative integration
+testing is passed.
+Note:
+A. Prioritization is important in each and every stage.
+ That is open the application and decide which feature to be
+tested first and later.
+ Go to the first feature and select which component to be
+tested first and later.
+ Go to first component and decide what value to enter first
+and later.
+B. Between two modules either will be doing both positive and
+negative integration testing or only positive integration
+testing. It just depends on how the features or modules are
+related to each other.
+C. Don't apply same rule everywhere because testing logic
+varies from feature to feature.
+D.Focusing on the feature is very important. Completely test
+one feature then only move on the other feature that is take
+one feature do functionality testing take same feature and
+do through integration testing then only move on to other
+features.
+E. Between two features we may do integration testing in both
+ways or one way or we may not do integration testing at all.
+It only depends on how features are related.
+Types of Integration testing:
+I. Incremental integration testing: Incrementally adding the
+modules and testing the data flow between modules is
+called Incremental integration testing.
+a. Top-down: Incrementally adding the modules and testing the
+data flow between modules but make sure that modules which
+you adding should be child of previous module.
+b. Bottom-up: Incrementally adding the modules and testing the
+data flow between modules but make sure that modules which
+you adding should be parent of previous module.
+Note: When the data flow is very complex and it is difficult to
+identify which is parent module and which is child module then
+we go for Non-Incremental integration testing.
+II. Non-Incremental integration testing: Combining all the
+modules at a shot and testing the data flow between the
+modules is called as Non-Incremental integration testing.
+Drawbacks:
+a. Chances are there we might miss some data flows.
+b. Chances are there we might repeat same testing because of
+that time taken will be more.
+c. If TE find any defect the it is difficult to analyse the root
+causing the defect.
+Interview question:
+Assume there are two modules A and B in that 'A' is ready
+and module 'B' is not ready how will you do integration
+testing? (or)
+What do you maen by STUB and Driver?
+ STUB: Dummy module which can be used instead of real
+module. It can generate and receive data.
+ DRIVER: It set up the test environment between real
+module and the stub and also does transaction between
+them. It will analyse result and it will send the report.
+
+================================================================================================================
+
+3. System Testing: It is end to end testing where in test
+environment should be similar to production environment.
+ End to End testing: Navigating through all the features
+and checking whether end feature or last feature is working
+as excepted are not.
+ Development Environment: It is the setup which is used
+for developing the software. It contains hardware, software,
+network and the servers.
+ Test Environment: It is set up which is used for testing the
+software. It contains hardware, software, network and the
+servers.
+ Production Environment: It is the setup which is used for
+running the software for the business.
+Why test environment should be equal to Production
+environment?
+ If the software in the normal environment may not work in
+production environment that is the reason before we move
+to production environment it should be tested in similar
+environment.
+ TE always retest only fixed bugs. Your bug should be
+retested by you only. You are not going to retest other bugs.
+Owner of the bug should retest the bug owner of the feature
+should retest the feature.
+Note: Whenever new build comes we always test in following
+priority:
+a. New feature first, because probability of catching bugs is very
+high.
+b. Integration between old and new module because that is also
+new.
+c. Retest the fixed bugs.
+d. Test the old features.
+Why do we find new bugs in the old modules?
+ Chances are there adding new feature might have
+introduced a new bug.
+ Chances are there fixing one bug would have introduced
+another bug.
+ Chances are there we would have missed in previous cycle
+and finding it in current cycle.
+When do we start System testing?
+ When all the basic features are stable.
+ When minimum bunches of features are ready.
+ If test environment similar to production environment is
+available.
+Even though all modules are ready we continued few cycles
+of testing?
+There were developers fixed lot of pending bugs we may have to
+retest it.
+ Fixing the might create lot of problems in other features so
+we have to ensure that the product is not having any
+impact. For that we may have to test full application.
+ So we continue with some more cycles.
+When do you release product to production?
+ When all the features requested by customer is ready.
+ When the complete product is functionally stable.
+ If there are no blocker or critical bugs left out in the
+product.
+ When end to end scenarios are working fine.
+ There are few left out bugs but they are all are minor or
+major.
+ If the product is being tested in environment similar to
+production.
+Release: Starting from collecting requirement develop it, test it
+until we release the product to the production it is called as one
+release.
+Test Cycle: It is effort or time spent to start and finish the
+testing of complete product.
+One test cycle duration can be of 3 days, 4 days or 15 days and it
+depends on:
+ Number of engineers in the team.
+ Size of the application.
+ The complexity of the application.
+ Also depends on if you are testing manually or
+automatically.
+Re-spins: Getting one more build within one test cycle is called
+as re-spin.
+Within one test cycle we can get 1 or n number of re-spins.
+Build: Compile all the Programs then you will get binaries,
+compress all the binary file then we get build.
+Patch(Update): Patch is a small software which contains
+modified program, newly added programs and record of deleted
+program.
+What happens when you install a Patch?
+ Modified Program goes and replaces the old Program.
+ New Program smoothly goes and sits.
+ It will also go delete certain program if there is a delete
+record.
+Who is involved in installing the software?
+Anybody from testing team anybody from development team or
+release engineer or build engineer or DEVOPS engineer.
+Continuous testing:
+Once the source code is ready the continuous integration tool
+creates a build and installs it in testing server the CI tool will
+trigger/run the automation scripts so the testing happens
+automatically the cycle repeat as per the schedule.
+Since testing s happening seamlessly this process is called
+Continuous testing.
+Types of Application:
+A. Standalone Application: Any application used by one user
+is called as Standalone Application.
+Eg: Notepad, Paint brush, MS word, Ms Excel, Notepad++
+B. Web Application: Any application opens through the
+browser is called as web application.
+Web application is a type of client server application wherein
+browser acts like a client.
+Eg: www.gmail.com
+C. Client-Server Application:
+ Client: It is a GUI provided to user so that user can input the
+data or user can view the data.
+ Server: Server which Authenticates the user. Stores the data if
+needed. Retrieves the data.
+How to develop and test and launch the web application
+software:
+1) Install the OS.
+2) Install the Webservers.
+3) Install the Appservers.
+4) Install the Database servers.
+5) Go to development server copy the build paste it in testing
+server untar the build.
+6) Deploy the files to the corresponding server.
+7) Start the server
+8) Send the mail to everybody saying that build is ready test
+it.
+
+================================================================================================================
+
+4. ACCEPTANCE TESTING:
+Approach 1(Definition):
+It is end to end testing done by the engineer sitting at the
+customer place where in they take end to end real time business
+scenarios and check whether software is capable of handling it or
+not.
+Why we do acceptance testing?
+a. Chances are there under business pressure software
+company might pushed the software with lots of bugs, to
+find it customer does acceptance testing.
+b. Software company might have misunderstood the
+requirement and develop wrong feature, to find such issue
+we should do acceptance testing.
+c. If they move the software to the production with the critical
+bugs they will undergo severe loss. To protect it they do
+acceptance testing.
+Approach 2:
+It is end to end testing done by the end users wherein they use
+the software for particular period of time and check whether
+software is capable of handling all possible real time situation.
+Approach 3:
+It is end to end testing done by our own engineer sitting at the
+customer place wherein they refer user scenarios given by the
+customer and check whether software is capable of handling it.
+Approach 4:
+It is end to end testing done by test engineer sitting at our place
+wherein they refer user scenarios given by the customer and
+check whether software is capable of handling all real time
+business scenarios.
+TEST EFFICIENCY:
+ TEST EFFICIENCY=Number of bugs found
+in testing divided by Total number of bugs (No of bugs found in
+testing+ No of bugs found in UAT+ No of bugs found in
+production)
+Root cause analysis: Here the team discuss about the defect or
+problem and causes or reason for getting the defects.
+Hotfix: In the production environment whenever clients find
+critical bugs, developer fix the bug and small team of TE will
+test it reinstall the software. Client starts using the new software
+this entire process is known as Hotfix.
+
+================================================================================================================
+
+SMOKE TESTING:
+Testing basic or critical feature of an application before we do
+through testing is called Smoke testing.
+Note: How we do smoke testing?
+ We will only do positive testing we will not do negative
+testing.
+ Here we only test critical feature not all the features
+because time available is less if you do all this you will not
+able to test all the critical feature.
+When we do Smoke testing?
+ Whenever new builds comes we should start with smoke
+testing because developers are givng new build means they
+would have done some changes and that change might have
+impact on the basic features. To find that in the beginning
+itself we do smoke testing.
+ Whenever customer does Acceptance testing he should
+start testing with smoke testing because:
+a. To confirm that the complete software received properly.
+b. To ensure that installation happened properly.
+ Whenever they install the product in production to confirm
+that it is installed properly customer does smoke testing.
+ Chances are there developers before giving build to the
+testing team might do smoke testing to ensure that they are
+not giving broken build to testing team and making them
+install and test.
+Why we do Smoke testing?
+ To check whether the product is testable: In the beginning
+itself if you find too many bugs that means product is not
+eligible for further testing. So better stop testing and spend
+remaining time in identifying some more scenarios.
+ Test all the basic or critical features in the beginning itself
+and if you find defects send it to developers in the beginning
+stage only. So that developers will have time to fix it.
+ We do this to check product installed properly.
+ It is a kind of health check of the software and we do this to
+ensure that we have not received a broken build from the
+developers.
+How we do smoke testing in the real time projects?
+In different projects they follow different approaches:
+ In some projects they will write smoke test cases whenever
+new build comes they execute the test cases manually.
+ Since executing smoke test cases manually is repetitive in
+nature job becomes monatomic.
+ So in some projects they automate all smoke test cases,
+whenever new build comes they run the automation script
+in beginning itself and conduct smoke testing automatically.
+Difference between smoke and sanity testing:
+Smoke testing is performed to ascertain that the acute
+functionalities of the program are operating properly. Sanity
+testing is done to check that bugs have been fixed after the
+build. Smoke testing can be documented and is scripted. Sanity
+testing can't be documented and is unscripted.
+Smoke test cases
+ID
+no:
+Description Steps Expected
+Result
+Actual
+Result Status
+1
+To check
+login
+functionality
+1. Launch
+the app
+2. Go to
+the login
+page
+3. Enter
+credentials
+4. Click
+login
+Successful
+login
+Login
+Successful pass
+2
+To check
+video launch
+functionality
+1. Go to
+the video
+page
+2. Click
+the video
+Smooth
+playback
+of the
+video
+Video
+player not
+popping
+up
+Fail
+Sanity testing
+Sanity testing is performed to ensure that the code changes that
+are made are working as properly.
+Example of Sanity Testing:
+In an e-commerce project, main modules are login page, home
+page, user profile page, user registration etc. There is a defect in
+the login page when the password field accepts less than four
+alpha numeric characters and the requirement mentions that
+this password field should not be below eight characters. Hence,
+the defect is reported by the testing team to the development
+team to resolve it.
+It is unscripted and undocumented
+Difference between smoke and sanity
+ Smoke Testing Sanity Testing
+To check critical functionalities To check new functionalities
+are working or bugs are fixed
+Used to the check stability of the
+system
+Used to check rationality in
+order to move into deeper tests
+Performed by both developers
+and testers Restricted to testers
+A form of acceptance testing A form of regression testing
+Build can be stable and unstable
+when smoke testing is performed
+Relatively stable when sanity
+testing is performed
+The entire application is tested Critical components is tested
+
+================================================================================================================
+
+ADHOC TESTING/MONKEY TESTING:
+Testing the basic or critical feature of an application before we do
+thorough testing is called as Adhoc testing wherein we don't refer
+any formal documents like test scenarios/ test cases or
+requirements.
+Why we do Adhoc testing?
+ When the product is launched end user might use the
+application randomly because of that he might get defects.
+To prevent such issues TE only test the application
+randomly and find bugs.
+ If you follow the requirement and test the application
+number of bugs you gonna catch is very less. So do not
+follow the requirement come up with creative scenarios
+which are out of requirement and test the application.
+ We do this somehow increase the bug count.
+ We do this somehow improve the test coverage.
+ We do this to check whether the software is working
+according to implicit requirement.
+How we do Adhoc testing?
+Diagram
+When we do Adhoc testing?
+ When the product is functionally stable then we think about
+doing adhoc testing.
+ In early stages of product development there will be too
+many bugs. So we don't do Adhoc testing.
+ Once after testing product according to requirement if there
+is time left the time must be used for Adhoc testing.
+ When we do smoke testing we are not suppose to do Adhoc
+testing.
+ When we do FT/IT/ST in middle if we come up with creative
+Adhoc scenario we should test that scenario and then
+comeback to FT/IT/ST.
+
+================================================================================================================
+
+3. COMPATABILITY TESTING:
+Testing the application in different hardware and software
+environment is called as compatability testing.
+Why we do compatibility testing?
+ Chances are there developers develop software in one
+platform (windows 10), test engineer will test the application
+in the same platform (windows 10) when product is
+launched end user use the application different
+platform(Win8/9). Software which works in one platform
+may not work in other platform because there might be
+defect. Due to this end user will get reduced and customer
+will undergo loss. To avoid this we should do compatibility
+testing.
+ We do compatibility testing to check whether features are
+working consistently in all the platforms or not.
+ Chances are there developers wil write common code and
+claims it works in all the platform. Or developers would
+have written common code and says that it works in
+respective platform. So TE should test in every platform and
+check whether it works or not.
+ Different hardware and software rendors GUI in different
+ways. So we may to test whether our software is working for
+all the combination or not.
+When we do compatibility testing?
+ When the product is functionally stable in base platform
+then we think about testing the application in different
+platform.
+How to do compatibility testing?
+It depends on type of application:
+ Standalone application: (Diagram)
+ Client-Server Application:
+TE will be doing compatibility testing for only client software
+not for server software sits in one place through this we
+have an access for the client software(through client
+software indirectly we interact with server software).
+ Web application:(diagram)
+How do you test web application?
+ WA means it will have so many components so we may have
+to do functionality testing.
+ WA means means there will be too many data flows so we
+should do integration testing.
+ It will have lot of end to end business scenarios so we
+should do system testing.
+ End users might use the application in different platforms
+so we should do compatibility testing that is we may to test
+application in different OS.
+In each OS we test it in different browser and in each browser
+test it in different versions and in each version test it in
+different settings like enable/disable java script,
+enable/disable cookies, test in different resolution.
+ Variety of user may use the application so it should be user
+friendly so we may have to do usability testing.
+ Multiuser can use so load on the application will be more so
+we may have to do performance testing.
+ It is has got secured data we have to do web security
+testing.
+ If the application is developed for multiple languages, we
+may have to do I18N and L10N testing.
+ To check whether application is user friendly for physically
+challenged person we will do accessibility testing.
+How do they allocate work in compatibility testing?
+(Diagram)
+ According to above example(diagram) we have to allocate
+some bunch of features to each engineer and ask them to
+test their features in different windows/platform so that
+when they test their features in different platform and they
+will get a chance to compare
+How do they manage compatibility testing?
+(Diagram)
+Note: Doing FT/IT/St in different platform is called as
+compatibility testing.
+What kind of bugs we can expect while doing compatibility
+testing?
+a) Alignment issues
+b) Scattered content.
+c) Object overlapping.
+d) Change the look and feel of the application: Certain formats
+may not be displayed in certain browsers.
+e) Scroll Bar Issues: Scrollbar may not be displayed in certain
+browsers in some browsers even though it is displayed it
+acts a image.
+What is hardware compatibility testing?
+Here we might test it in different hardware like:
+a. Different processor
+b. Different speed
+c. Different bit sizes.
+d. Different make ( HP, Dell, Intel).
+e. Different mother board.
+f. Different VGA cards.
+g. Different resolution.
+
+================================================================================================================
+
+USABILITY TESTING/GUI TESTING/YELLOW BOX
+TESTING/COSMETIC TESTING:
+Testing the user friendliness of an application is called as
+Usability testing.
+How to do Usability testing?
+ I will check whether look and feel of the application is good
+or not.
+ I will check whether it is easy to understand or I will check
+whether it is taking less time to understand about the
+application.
+ Frequently used features or important features must be
+given to the user within '3' clicks.
+ Frequently used features or important features should be
+easily accessible.
+Eg: Important features are Frequently used features should be
+present either at left navigation bar or top navigation bar.
+ To do simple activity application should take less time.
+For What kind of application we should do usability testing?
+ Any application which is used by variety of users.
+ Any application which generates lot of revenue.
+ Any application wherein we don't provide any training to the
+end user that we are expecting themselves itself to
+understand application and use the application.
+When we do Usability testing?
+Different projects will do usability testing in different ways that
+is:
+ Some projects they will do when the product becomes
+functionally stable.
+ In some projects they will do usabillity testing in the
+beginning of the SDLC itself.
+PERFORMANCE TSETING/SPIKE LINE TESTING/BOTTLE
+NECK TESTING:
+Testing the stability and the response time of an application by
+applying load is called as Performance testing.
+Response time: It is the total time taken to send request to the
+server(T1). Time taken to execute the program(T2). It is the time
+taken to send
+response to the user(T3).
+Response time=T1+T2+T3.
+Load: It is nothing but designed number of user.
+Stability: Stability is the ability to withstand the designed
+number of user.
+Performance testing tool: J-Meter, Neo-load, Load runner.
+How to do performance testing by using Performance testing
+tool? (Diagram)
+ Take a performance testing tool(Jmeter), write scripts and
+click on run.
+ Tool will ask the number of virtual users for example enter 1
+lakh and click on run.
+ Now 1 lakh request is fired to the server. Now there is a
+heavy load on the server now server will send response to
+the performance testing tool.
+ Tool will analyse the response and give the result in the
+form of graph.
+ TE will analyse the graph and decide whether test is pass or
+fail.
+ If it is fail TE will communicate the defect to developer will
+change the code in order to improve the performance and he
+will give new build to TE.
+ TE will once again run the script and repeat the steps until
+he gets the result as pass.
+Note: Changing the code in order to improve the performance is
+called as performance tuning.
+Types:
+a) Load Testing: Testing the stability and the response time of
+an application by applying load which is equal or less than
+designed number of user.
+b) Stress Testing: Testing the stability and the response time
+of an application by applying load which is more than
+designed number of user.
+c) Volume testing: Testing the stability and the response time
+of an application by transferring huge volume of data.
+d) Soak testing: Testing the stability and the response time of
+an application by applying load continuously for a
+particular period of time.
+For what kind of application we should do performance
+testing?
+ Any application which is used by multiusers.
+ Any application which genarates lot of revenue.
+When we do Performance testing?
+Different projects will do usability testing in different ways that
+is:
+a. Certain projects they will do when the product becomes
+functionally stable.
+b. In Certain projects they implement performance testing in the
+beginning of the SDLC itself.
+
+================================================================================================================
+
+4. GLOBALISATION TESTING:
+GLOBALISATION: Developing the software for different
+languages is called GLOBALISATION.
+Testing the application which is developed for multiple languages
+is called as globalisation testing.
+How they develop software for multiple languages.
+Step1: User opens the browser and enter URL click on go.
+Request goes to the server. The request object has got two things:
+One that is Page name and secondly Language code.
+In this example page name is welcome and language code is
+English.
+Step2: The server is waiting for the requesr. As soon as the
+request comes it will get into the request object and checks for
+the page name. In this example the page name is welcome so it
+connects to welcome (.jsp) program.
+Step3: Program starts running the program has got two section
+first section receives the request object and checks for the
+language code. In this example language code is English so it
+connects to English property file. The connection is established
+between property file and program file.
+Step4: The reamining part of the program copies the content
+from the property file and display it on the browser.
+Types:
+A. Internationalisation or I18N testing:
+Testing the application which is developed for multiple languages
+is called as I18N testing.
+Here we check whether:
+a. Right content is displayed or not.
+b. Right content is displayed in right place or not.
+c. Features are broken with the language changed.
+How we do I18N testing(for testing)?
+a. Go to chinese property file.
+b. Add prefix and suffix to it.
+c. Save the property file.
+d. Open the application select the language , corresponding
+page will be displayed.
+e. I will check for prefix. Prefix is correct means content is
+displayed in right language.
+f. I will check for suffix Suffix is correct means right content is
+displaying in right place.
+Note: TE for their understanding purpose in order to test the
+software they give prefix and suffix to different language or
+context. This concept is called as Pseudo translation.
+What types of bugs we can expect while doing I18N testing?
+a. Chances are there might language might not be displayed.
+Eg Gmail select language as Kannada/Telugu content still
+displaying in English.
+b. Chances are there right content may not be display in right
+place.
+c. Alignment specification problem for languages(uni and bi)
+d. Tool tip defect:(When user points cursor on the image
+rectangular box will be displays will explain about the image
+is called as tool tip)
+e. Tool tip defect means that information should be displayed
+with language which user has selected. It is not displayed
+then it will be tool tip defect.
+B. Localisation testing or L10N testing/Format testing:
+Testing the software to check whether the software is developed
+according to country standard or country culture.
+Here we check for currency format, date format, pin code format
+and also colour of the image is displayed as per country
+standard.
+
+================================================================================================================
+
+5. ACCESSIBILITY TESTING/ADA-AMERICAN DISABILITY
+ACT/508 ACT:
+Testing the user friendliness of the application by physically
+challenged person point of view is called as accessibility testing.
+Example:
+a. Here we check whether by using keyboard whether we are
+able to access all the objects.
+b. Here we check whether red and green coloured objects is
+present or not.
+6. RELIABILITY TESTING:
+Testing the application or s/w continuously for a particular
+period of time is called as reliability testing.
+Note: Any application which is used continuously for longer
+hours should undergo this kind of testing.
+Eg: MS word, excel, paint, whatsapp, instagram, facebook.
+Types of companies:
+ Service based:
+Eg: TCS, WIPRO, INFOSYS,IBM etc..
+A. Here customer will be there and they provide requirement.
+B. BA will be present in service based company and he will do
+requirement collection.
+C. Here software company after developing and testing
+software they don't have any rights to keep the source code
+with them and also they don't have any rights to sell that
+s/w other customer.
+ Product based:
+Eg: Google, HP, dell, sony, siemens and etc.....
+1) Intially there will be no customers.
+2) Product analyst will be present in product based company.
+3) PA will do market research and collect the requirement
+what is required and explain it to the company.
+4) S/w company after developing and testing software they will
+sell it to multiple customers and they have rights to keep
+the source code.
+ALPHA Testing: It is the testing done by TE before we give
+product for Acceptance testing.
+BETA Testing: It is the testing done by the end users based on
+their feedback product will be launched.
+Why they do beta release?
+ Company will get thousands of free user to test.
+ They use the application in variety of ways and in variety of
+platforms and catch bugs which we cannot simulate within
+testing team.
+Retesting:
+Retesting is a process to check specific test cases that are found
+with bug/s in the final execution. Generally, testers find these
+bugs while testing the software application and assign it to the
+developers to fix it. Then the developers fix the bug/s and assign
+it back to the testers for verification. This continuous process is
+called Retesting
+
+================================================================================================================
+
+REGRESSION TESTING:
+Testing the unchanged features to make sure that it is not
+broken because of changes is called as Regression testing. Here
+changes can be addition, modification, removal or bugs fixes.
+OR
+Re-execution of same test cases in different test cycles or sprint
+or release to make sure that changes are not introducing defects
+in the unchanged features is called as regression testing.
+Types of Regression testing:
+a) Unit Regression testing: Testing only the bugs which is
+fixed or changes made is called as unit regression testing.
+b) Regional Regression testing: Testing only the changes
+and the impact areas is called as regional regression testing.
+How will you identify areas or how you will do Impact
+analysis?
+ Based on the product knowledge. As TE I will be knowing
+how each and every module works and also I will be
+knowing how each and modules are related. Based on that
+knowledge I will be able to identify the Impact areas.
+ By preparing Impact analysis matrix we identify areas
+wherein we list the changes and also list all the features and
+also we map it.
+ By conducting Impact Analysis meeting here entire testing
+team meets and discuss about the list of changes, bug fixes
+and also associated impact region.
+c) Full Regression Testing: Testing the changes and all
+remaining features is called as Full regression testing.
+Why or When we do Regression Testing?
+ Whenever too many changes are done in the product.
+ Whenever changes made in the Root of the product or
+in the core feature.
+ At for last few cycles or release or the sprint we should
+do regression full regression testing.
+Advantages of Regression Testing:
+ By not testing all the features we save lot of time.
+ This reduces test cycle duration.
+Drawbacks:
+ Chances are there we might miss to identify impact areas
+and because of that we might miss a bug.
+
+===============================================================================================================
+
+SECURITY TESTING
+Security Testing is a type of Software Testing that uncovers
+vulnerabilities of the system and determines that the data
+and resources of the system are protected from possible
+intruders.
+Goal of Security Testing:
+The goal of security testing is to:
+ To identify the threats in the system.
+ To measure the potential vulnerabilities of the system.
+ To help in detecting every possible security risks in the
+system.
+ To help developers in fixing the security problems through
+coding.
+Types of Security Testing:
+1. Vulnerability Scanning:
+Vulnerability scanning is performed with the help of
+automated software to scan a system to detect the known
+vulnerability patterns.
+2. Security Scanning:
+Security scanning is the identification of network and system
+weaknesses. Later on it provides solutions for reducing these
+defects or risks. Security scanning can be carried out in both
+manual and automated way.
+3. Penetration Testing:
+Penetration testing is the simulation of the attack from a
+malicious hacker. It includes analysis of a particular system
+to examine for potential vulnerabilities from a malicious
+hacker that attempts to hack the system.
+4. Risk Assessment:
+In risk assessment testing security risks observed in the
+organization are analysed. Risks are classified into three
+categories i.e. low, medium and high. This testing endorses
+controls and measures to minimize the risk.
+5. Security Auditing:
+Security auditing is an internal inspection of applications and
+operating systems for security defects. An audit can also be
+carried out via line by line checking of code.
+6. Ethical Hacking:
+Ethical hacking is different from malicious hacking. The
+purpose of ethical hacking is to expose security flaws in the
+organization system.
+Defect Tracking Process:
+Why you should not wait for the permission of test lead to
+send bug report to development lead?
+ There will be delay in communicating defect report.
+ As a TE I will be having knowledge in depth about my
+feature so better take a decision and send report to DE, DL
+without the permission of test lead.
+Why we should keep CC for test lead?
+ TL is a one who attends all types of meeting like customer
+management and development team he should be aware of
+all thing that are there in product.
+ To get visibility that TE is working.
+As soon as you get defect immediately you should send that
+to developer. Why?
+ TE might forget the defect.
+ Someone might send your defect.
+ If the defect is sent early developers will have sufficient time
+to fix the defect.
+Severity:
+It is decided based on the impact of defect on customer business.
+There are different levels of severity:
+1. Blocker or Showstopper defect: Assume that there is a
+defect in the software and I am 100% sure that this defect
+will affect the customer business flow and also it is blocking
+TE to test the application. Such type of defect is called as
+Blocker or Showstopper defect.
+2. Critical Defect: Assume that there is a defect in the
+software and I am 100% sure that this defect will affect the
+customer business flow but not the TE to test the
+application. Such defect is called as critical defect.
+3. Major defect: Assume that there is a defect in the software
+and I am not sure that how this defect will affect the
+customer business. This kind of defect is called as Major
+defect.
+4. Minor or trivial defect: Assume that there is a defect in the
+application and I am 100% sure that this defect will not
+affect the customer business flow. This kind of defect is
+called as Minor defect.
+Priority:
+Importance given to fix the defect or how soon defect must be
+fixed by the developer.
+There are different levels of priority:
+1. High or P1: If the defect is having high priority as P1 or
+High then developer should immediately fix the defect.
+2. Medium or P2: If the defect is having priority as P2 or
+Medium then developers should fix the defect within test
+cycle or within test cycle or within some build or within a
+release.
+3. Low or P3: If the defect is having Low or P3 then developers
+can fix the defect in upcoming or within 2 to 3 release.
+4 combinations:
+a. High severity and High priority
+b. High severity and Low priority
+c. Low severity and Low priority
+d. Low severity and High priority
+HS and LP:
+1. In FB help page is navigating to blank page.
+2. Whatsapp is not installed for the 50th time.
+3. Whatsapp invite share is not working for one of the 3rd
+party application.
+LS and HP:
+1. Spelling mistake in the welcome page (Pacebook).
+2. Login becomes Loving.
+3. Alignment issue in the login page.
+Who will give severity and priority?
+TE will give the severity and priority.
+One defect will have only one severity and one priority.
+Defect Tracking:
+What is defect?
+Any feature which is not working according to the requirement
+specification is called as defect.
+Deviation from the requirement specification is called as defect.
+Why we get defect?
+1. Missing implementation
+2. Wrong implementation
+3. Extra implementation
+What is the difference between defects, bugs, error and
+failure?
+Defect: Any feature which is not working according to the
+requirement specification is called as defect.
+Bugs: It is informal name given to the defect.
+Error: Error is a mistake done in the program by the
+programmer in which we are not able to compile or run the
+program.
+1. Compile Time Error: We get this error because of syntax
+mistake.
+2. Run Time Error: We get this error because of logical
+mistake.
+Failure: Defect in the software leads to failure.
+One defect might lead to one failure or multiple failure.
+Defect Life Cycle or Bug Life Cycle:
+Explain defect life cycle?
+1. Test Engineer:
+ TE will find the defect.
+ He will login into defect tracking tool and prepare defect
+report.
+ He will put status as new/ open.
+ He will send report to DL.
+2. Development Lead:
+ He will read the report and understand the problem.
+ He will identify the developer who has done the mistake.
+ He will change status to assigned.
+ He will send report to DE.
+3. Development Engineer:
+ He will read the report and understand the problem.
+ He will go to source code and fix the defect.
+ He will change the status as fixed.
+ He will send that report to TE and also keep CC for DL.
+4. Test Engineer:
+ He will read the report and understand the problem.
+ He will retest the bug if it is fixed he will change status as
+closed.
+ If the defect is not fixed he will change the status as
+reopen.
+This entire process is called as Bug life cycle.
+Defect life cycle consists of below mentioned status.
+1. New: TE when he finds defect for the first time status will
+be “New”.
+2. Open: When developer start to work on the defect then the
+status will be in open.
+3. Reject: TE will assume feature itself as defect and he will
+send that defect to developer.
+Developer say that it is not a defect it is feature in such case
+they will change the status to Reject/ Invalid/ Not a defect.
+Why do we get Reject status?
+ Because of misunderstanding the requirement.
+ Because of extra feature.
+Note: Whenever TE calls extra feature as defect
+chances are there developers might Reject it. In such
+case Reopen the defect and ask to update the
+requirement.
+ When the build or software is wrongly configured or
+wrongly installed.: If TE install the build wrongly and
+find the defect in the software and communicate that
+to developer, developer say that it is not a defect
+because code is perfect and TE is not properly
+installed.
+ Because of referring old requirement.
+4. Duplicate: If TE finds defect and communicate defect to the
+developer if same defect is logged/ tracked by another TE
+then DE will tell that this is duplicate of old defect.
+Why we get duplicate status?
+ Because of testing common feature.
+ Old TE would have found lot of defects in that there
+are still some pending bugs which has to be fixed. If
+new TE join to same project and send‟s same bugs in
+such case developer say that it is duplicate.
+Case 1: TE will find the defect in the software if already
+same defect is present with the status as “New” in this
+case TE should never track the defect.
+Case 2: TE finds defect in the software if already same
+defect is present with the status as “Fixed” then TE
+should reopen the defect.
+Case 3: TE finds defect in the software if already same
+defect is present with the status as “Closed” in this case
+TE should track as new defect.
+How to avoid duplicate status?
+ TE when he finds defects communicate defect to
+the developers and will keep CC for TL and also
+he should keep CC for all TE who are working in
+the same project.
+ TE when he finds defect before preparing a report
+login into the defect tracking tool you should
+search for duplicate defects in DTT by entering
+certain keywords in “Advance search” TF.
+ TE when he finds defect before communicating
+that defect to DE he should cross check with
+senior TE, TL and also developers so that you can
+avoid duplicate.
+Why developer will say it as duplicate?
+ To reduce defect count.
+ To reduce duplicate effort.
+5. Cannot be fixed: Developers are accepting it as a defect but
+they are not in the position to fix the defect. In such case
+developers will change status as cannot be fixed.
+Why?
+ If there is defect present in the root of the software and
+if it not is affecting customer business, then developer
+say it as Cannot be fixed.
+ Because of the technology is not supporting: It means
+the programming language which is used to develop
+the software has got no capacity to fix the problem.
+ If the cost of fixing the defect is more than the cost of
+the bug, then developer say cannot be fixed.
+6. Postponed: Developers are accepting that it is the defect
+they want to fix it little later, in this case developer will
+change status as Postponed.
+Why?
+ If TE finds minor defect at the end of the release and if
+developer is not having sufficient time to fix that
+defect, then developer will say it as Postponed.
+ If TE find defect in the feature which is not necessary
+for the customer in the current release, then developer
+will say it as Postponed.
+ If TE finds a defect and send it to developer and
+developer will say that customer is expecting changes
+in the same feature so this defect is postponed until we
+get clarity from the customer.
+ If the defect is exposed to the internal users, then
+developer will postpone the defect.
+7. Issue is not reproducible: TE are able to see the defect
+developers are not able to see the same defect in such case
+developers say that Issue is not reproducible.
+Why?
+ Because of platform mismatch:
+o Because of OS mismatch
+o Because of browser mismatch
+o Because of browser version mismatch
+o Because of browser settings mismatch
+ Because of improper defect report.
+ Because of incorrect data.
+ Because of inconsistent defect.
+8. RFE: While testing software if test engineer finds any defect
+which is not a part of the requirement. Then developer will
+say that defect as RFE.
+Who can give RFE?
+It can be given by customer/ TE/DE/ TL.
+JIRA NOTES:
+WHAT IS JIRA?
+ANS:
+Developed by: atlassian
+Released in: 2002
+Written in: java
+Website: https://www.atlassian.com
+Description: It is a Project Management Tool, Test Management
+tool, Bug Tracking tool.
+It is used for entire project management i.e, planning, tracking,
+reporting.
+In JIRA Owner create project (SCRUM/KANBAN/BUG TRACKING
+TOOL), plan the project and invite users to perform different
+tasks of the project.
+In Jira everything is seen as an Issue.
+There are basically 4 types of issue:
+1. Epic: Collections of stories
+Example: user registration and browsing-epic1
+User profile and settings-epic 2
+2. Story: user story/requirement
+Example: login-s1
+Sign up –s2
+Home-s3
+3. Task: The user story will have many tasks for developers,
+testers respectively
+Example:
+System study of Story 1-task1
+Develop story 1-task2
+Tests story 1-task3
+4. Bug: Defect
+Note:
+owner will create :
+• • Sprint
+• • Then epic (high level requirement / collection of stories)
+• • Then story (user story/requirement, an epic will have
+multiple stories)
+• • Then task and assign it to engineers (a piece of work
+assigned to engineer related to a story, an engineer will be
+assigned with multiple task.
+Testers will create:
+• • Defects/bug
+• • Test cases
+*Once any issue is created an unique key/ticket number will be
+generated for that particular issue.
+Zephyr – extra pluggin (add on app) should be installed within
+Jira if we want to do the test management ) i.e: writing test cases,
+executing test cases, generating test execution report.
+As soon as owner pluggin zephyr we get another issue type in
+JIRA which is „test‟, to write test cases.
+1. Using JIRA as a test engineer we will do system study by
+reading the user stories which will tell us the details about the
+requirement for the modules.
+2. Using JIRA we will be able to clarify our doubts about any
+particular module or component by leaving a comment in the
+comment section under the user story.
+All the other requirements like MIRO BOARD, ZEPLIN can be
+linked in JIRA , we can directly
+give the link of these requirements and engineers can refer all the
+requirements and do the system study.
+3. Using JIRA engineers can write test cases (after zephyr
+has been added )
+Steps:
+• • Click on the „+‟ symbol and create issue window will popup
+• • Select the project>select the issue type as „test‟ and fill
+necessary details
+• • Summary: here we have to write the scenario description
+Example: validate user is able to login using valid credentials
+• • Description: Write the test data, action steps (in bullet
+points), expected result.
+• • Assignee: assign to yourself ( because we will execute the
+test cases).
+• • Epic link: select which epic this belongs to
+• • Sprint: select the sprint in which the test case belongs
+• • Then click on create button
+• • As soon as test case is created an unique ticket number is
+generated.
+Or
+• • Click on zephyr in the left navigation bar
+• • Click on create test
+• • Same window as above will appear
+• • Follow same above steps
+*After writing all the test cases we create test cycles by click on
+• • Zephyr in the left navigational bar
+• • Click on cycle summary
+• • Click on create test cycle (name it and give the start and
+end date and add the test case you want to put in that test cycle,
+and specify for which release and build(optional) it is)
+Example: test cycle name: smoke test cases
+After separating all the test cases in to different test cycles like
+(smoke or regression or system or acceptance etc)
+*After this We move on to test execution
+In test execution we will:
+• • Open the particular test cycle(which we want to execute)
+• • All the test cases will be listed
+• • Now we open each test case and we click on the execute
+button (E).
+• • After executing we can update either pass or fail
+• • We can clone a test cycle and rename it
+• • We can delete a test case
+• • We can see the execution report after executing all the test
+cases by clicking on zephyr>test metrics and test summary to see
+total executed total pass total fail.
+4. Using jira we can log defects as a tester
+• • By clicking on + button
+• • Select the project
+• • Select the issue type as „bug‟
+• • Write the defect summary in the summary text field
+• • Write the steps to reproduce in the detailed description
+text area
+• • Mention the assignee(developer)
+• • Mention the priority
+• • Mention the epic link
+• • Mention the sprint link
+• • Attach the screenshot and the screen recording in the
+attachment section
+• • Click on create button
+We can edit the created defect.
+We can change the status of the created defect.
+Jira contains four packages:
+• • Jira Core is intended as generic project management
+• • Jira Software includes the base software, including agile
+project management features (previously a separate product: Jira
+Agile)
+• • Jira Service Desk is intended for use by IT or business
+service desks.
+• • Jira Ops is intended as incident management
+SDLC
+SDLC is a process followed for a software project, within a
+software organization. It consists of a detailed plan describing
+how to develop, maintain, replace and alter or enhance specific
+software. The life cycle defines a methodology for improving the
+quality of software and the overall development process.
+A typical Software Development Life Cycle consists of the
+following stages −
+Stage 1: Planning and Requirement Analysis
+Requirement analysis is the most important and fundamental
+stage in SDLC. It is performed by the senior members of the
+team with inputs from the customer, the sales department,
+market surveys and domain experts in the industry. This
+information is then used to plan the basic project approach and
+to conduct product feasibility study in the economical,
+operational and technical areas.
+Planning for the quality assurance requirements and
+identification of the risks associated with the project is also done
+in the planning stage. The outcome of the technical feasibility
+study is to define the various technical approaches that can be
+followed to implement the project successfully with minimum
+risks.
+Stage 2: Defining Requirements
+Once the requirement analysis is done the next step is to clearly
+define and document the product requirements and get them
+approved from the customer or the market analysts. This is done
+through an SRS (Software Requirement
+Specification) document which consists of all the product
+requirements to be designed and developed during the project
+life cycle.
+Stage 3: Designing the Product Architecture
+SRS is the reference for product architects to come out with the
+best architecture for the product to be developed. Based on the
+requirements specified in SRS, usually more than one design
+approach for the product architecture is proposed and
+documented in a DDS - Design Document Specification.
+This DDS is reviewed by all the important stakeholders and
+based on various parameters as risk assessment, product
+robustness, design modularity, budget and time constraints, the
+best design approach is selected for the product.
+A design approach clearly defines all the architectural modules
+of the product along with its communication and data flow
+representation with the external and third party modules (if
+any). The internal design of all the modules of the proposed
+architecture should be clearly defined with the minutest of the
+details in DDS.
+Stage 4: Building or Developing the Product
+In this stage of SDLC the actual development starts and the
+product is built. The programming code is generated as per DDS
+during this stage. If the design is performed in a detailed and
+organized manner, code generation can be accomplished without
+much hassle.
+Developers must follow the coding guidelines defined by their
+organization and programming tools like compilers, interpreters,
+debuggers, etc. are used to generate the code. Different high
+level programming languages such as C, C++, Pascal, Java and
+PHP are used for coding. The programming language is chosen
+with respect to the type of software being developed.
+Stage 5: Testing the Product
+This stage is usually a subset of all the stages as in the modern
+SDLC models, the testing activities are mostly involved in all the
+stages of SDLC. However, this stage refers to the testing only
+stage of the product where product defects are reported, tracked,
+fixed and retested, until the product reaches the quality
+standards defined in the SRS.
+Stage 6: Deployment in the Market and Maintenance
+Once the product is tested and ready to be deployed it is
+released formally in the appropriate market. Sometimes product
+deployment happens in stages as per the business strategy of
+that organization. The product may first be released in a limited
+segment and tested in the real business environment (UAT- User
+acceptance testing).
+Then based on the feedback, the product may be released as it is
+or with suggested enhancements in the targeting market
+segment. After the product is released in the market, its
+maintenance is done for the existing customer base.
+SDLC Models
+There are various software development life cycle models defined
+and designed which are followed during the software
+development process. These models are also referred as Software
+Development Process Models". Each process model follows a
+Series of steps unique to its type to ensure success in the
+process of software development.
+Following are the most important and popular SDLC models
+followed in the industry −
+ Waterfall Model
+ Iterative Model
+ Spiral Model
+ V-Model
+ Big Bang Model
+Other related methodologies are Agile Model, RAD Model, Rapid
+Application Development and Prototyping Models.
+STLC
+STLC is a sequence of different activities performed by the
+testing team to ensure the quality of the software or the product.
+ STLC is an integral part of Software Development Life Cycle
+(SDLC). But, STLC deals only with the testing phases.
+ STLC starts as soon as requirements are defined or SRD
+(Software Requirement Document) is shared by
+stakeholders.
+ STLC provides a step-by-step process to ensure quality
+software.
+ In the early stage of STLC, while the software or the product
+is developing, the tester can analyze and define the scope of
+testing, entry and exit criteria and also the Test Cases. It
+helps to reduce the test cycle time along with better quality.
+ As soon as the development phase is over, the testers are
+ready with test cases and start with execution. This helps
+to find bugs in the initial phase.
+STLC Phases
+STLC has the following different phases but it is not mandatory
+to follow all phases. Phases are dependent on the nature of the
+software or the product, time and resources allocated for the
+testing and the model of SDLC that is to be followed.
+There are 6 major phases of STLC −
+ Requirement Analysis − When the SRD is ready and
+shared with the stakeholders, the testing team starts high
+level analysis concerning the AUT (Application under Test).
+ Test Planning − Test Team plans the strategy and
+approach.
+ Test Case Designing − Develop the test cases based on
+scope and criteria‟s.
+ Test Environment Setup − When integrated environment
+is ready to validate the product.
+ Test Execution − Real-time validation of product and
+finding bugs.
+ Test Closure − Once testing is completed, matrix, reports,
+results are documented.
+TEST CASES
+REGISTRATION AND LOGIN TEST CASES
+POSITIVE TEST CASES
+A user clicks on the Register button – a registration form opens.
+A user enters registration details in the correct format –
+registration is successful.
+A user enters the correct credentials – they log into the account.
+A logged user clicks on Sign Out – the system logs a user off.
+A user clicks on Forgot Password – a password change form pops
+up.
+A user signs in with a new password entered – the system logs a
+user in.
+A user checks Remember Me in the checkbox – the system keeps
+them logged in for the next visit.
+A user can log in by pressing Enter after typing in the
+credentials. After entering a username, a person can switch to
+the password field with Tab.
+A user logs in with the same credentials in different browsers –
+login successful.
+NEGATIVE TEST CASES
+A user tries to register with invalid credentials. Such cases
+should consider:
+A user tries to register with invalid credentials. Such cases
+should consider:
+Quantity of symbols allowed.
+Specific password requirements.
+Email format.
+Phone number format.
+A user enters incorrect credentials – can‟t log in. The options that
+fall under this case:
+Incorrect login + incorrect password.
+Correct login + incorrect password.
+Incorrect login + correct password.
+One of the fields or both are empty.
+The account with the given username is not registered in the
+system – can‟t log in.
+A user is not logged in – only features and areas for non-logged
+users are available.
+A user signs in with an old password entered after password
+change – can‟t log in.
+A user signs in with a new password before passing verification
+via email – can‟t log in.
+A user signs in with an unverified email address – can‟t log in.
+A user signs in with a blocked email address – can‟t log in.
+A user presses the Back button after logging out – remains logged
+out.
+SHOPPING CART TEST CASES
+POSITIVE TEST CASES
+Website users can easily add/remove products to/from a
+shopping cart.
+Users can add the same product multiple times and change their
+quantity in the cart directly.
+It is possible to add the same products in different variations –
+color, size, etc.
+Users can add products from different categories to the cart.
+Items in the cart are displayed with correct names, images, and
+prices.
+The items are clickable, and the links lead to corresponding
+product pages.
+An order price updates when a user adds/removes a new item
+to/from the cart.
+Price alterations, like vouchers, discounts, special offers, etc. are
+automatically accounted into the total price.
+Custom and one-time codes work correctly and are applied
+within the set timelines.
+Shipping charges are included in the total price but displayed
+separately along with the other parameters.
+NEGATIVE TEST CASES
+If an item is out of stock, a user cannot add it to the cart.
+A user cannot add identical items if they become unavailable (out
+of stock) during shopping.
+When a user removes all items from the cart, nothing is displayed
+and the total price equals zero.
+When a user closes a tab with a shopping cart, the items should
+remain in the cart.
+PAYMENT
+UI Test Cases for Payment Gateway
+1. Check if all the labels and boxes are visible.
+2. Verify the payment gateway company logo or name.
+3. Check if the credit card number is masked or not.
+4. Verify that all the payment options are visible.
+5. Check if the color scheme matches the specifications.
+Functional Test Cases for Payment Gateway
+1. Check if each of the payment options is selectable.
+2. Check if the default credit/debit card gets automatically
+added.
+3. Verify that the page does not proceed to the payment page
+before all the mandatory information is filled.
+4. Check if multiple cards can be saved as default or not.
+5. Verify that the correct currency is reflected on the page.
+6. Check if the payment is not getting processed for null values
+in the cart.
+7. Verify if multiple payment options are not getting selected.
+Only one at a time.
+8. Check if the payment is not getting proceeded with an
+expired/blocked card.
+9. Verify cases like-
+ Credit/debit card number+wrong date+ right cvv
+ Credit/debit card number+ right date+ wrong cvv
+ Wrong credit/debit card number+ right date+ right cvv
+ And some other similar combinations
+10. Check if the user gets a confirmation message or mail
+if the payment is successful.
+11. Check if a pop-up appears if the session has expired.
+12. Verify that the user gets information about
+unsuccessful payment.
+13. Check if double payment is not occurring in any case.
+14. Check what happens after the session gets expired.
+Does the payment still occur?
+15. Verify if the respective payment option triggers the
+right payment gateway.
+16. Check if the user is directed back to the application
+after a successful transaction.
+17. Check what happens if the payment gets stopped
+midway. Does the amount still gets deducted?
+18. Check if the pop-up blocker during the payment is
+functional.
+19. Check if the application page is not getting redirected
+to some other page or link.
+Security Test Cases for Payment Gateway
+1. Verify if the credit card information is in a masked form.
+2. Check that the payment is happening through a secured
+channel. i.e the link starts with HTTPS instead of the
+regular HTTP pages.
+3. Verify if the OTP reaches only the verified number linked
+with the card.
+4. Verify if the transaction gets canceled if the wrong OTP is
+entered.
+5. Check if it cannot be entered multiple times. A hacker can
+do a brute force attack by entering various combinations.
+6. Check if the session gets expired within the specified time.
+7. Verify that the person gets notified if the wrong OTP is
+entered.
+8. Check that it does not reflect on multiples numbers.
+9. Verify the bank name reflecting on the payment page is the
+same as the user.
+10. Check if the amount deducted is the same as the
+amount mentioned.
+Performance Test Cases for Payment Gateway
+1. Check if the payment gateway does not crash if multiple
+users are using it simultaneously.
+2. Check if the processor is responding quickly.
+3. Verify the time taken to reach the payment gateway from
+the application‟s page is the same as specified.
+4. Verify if the page is secured from brute force or SQL
+injection attacks.
+5. Check if once logged in, the back button does not log out
+the user from the application.
+6. Check if the payment is happening even after the session
+expires.

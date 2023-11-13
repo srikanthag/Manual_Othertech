@@ -1,0 +1,66 @@
+1. What is Firebase and who is the founder?
+it is a platform used for building IOS, Web and Android applications. It was founded by James Tamplin and Andrew Lee in September 2011.
+
+
+2. What are the advantages of Firebase?
+Variety of useful services to choose
+Simple control dashboard is offered
+It is user friendly
+Data is real time
+
+
+3. What are the features of Firebase?
+Authentication
+Real-time Database
+Firebase Database
+Hosting
+Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
