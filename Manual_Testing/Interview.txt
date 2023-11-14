@@ -1,0 +1,215 @@
+What is Software Testing?
+1. The Process of identifying defects in the software is called software testing.
+2. Verifying functionality of an application against the requirement specification is called Software testing.
+3. Execution of the program with intent to finding defects in the software is called as Software testing.
+
+Why we do Software testing?
+* Every software supports business, if there are any defects in the software it will affect Customer Business. So before we use software for the business all the bugs should be found and should be fixed that is software must be well tested.
+*  To improve the quality of the software.
+* To check whether the software is working according to the customer requirement.
+
+Why TE should never involve in fixing the defect?
+ If they spend time in fixing one bug he will not get time to test remaining features.
+ If he spends time in fixing one bug he will not get time to catch the remaining bugs.
+ Chances are there fixing one bug might introduce lot of other bugs.
+ So TE should never involve in fixing the defects.
+
+
+
+## What is the process of functional testing?
+Testers follow the following steps in the functional testing:
+* Tester does verification of the requirement specification in the software application.
+* After analysis, the requirement specification tester will make a plan.
+* After planning the tests, the tester will design the test case.
+* After designing the test, case tester will make a document of the traceability matrix.
+* The tester will execute the test case design.
+* Analysis of the coverage to examine the covered testing area of the application.
+* Defect management should do to manage defect resolving.
+
+
+## What to test in functional testing? Explain
+The main objective of functional testing is checking the functionality of the software system. It concentrates on:
+* Basic Usability: Functional Testing involves the usability testing of the system. It checks whether a user can navigate freely without any difficulty through screens.
+* Accessibility: Functional testing test the accessibility of the function.
+* Mainline function: It focuses on testing the main feature.
+* Error Condition: Functional testing is used to check the error condition. It checks whether the error message displayed
+
+
+## Explain the complete process to perform functional testing.
+* There is a need to understand the software requirement.
+* Identify test input data
+* Compute the expected outcome with the selected input values.
+* Execute test cases
+* Comparison between the actual and the computed result
+
+
+
+* Why the requirement should be numbered?
+
+ There will be clarity in the requirement.
+ Communication between customer, developer and testing team becomes very much smooth.
+ It will be easy to understand.
+ Requirement becomes measurable and traceable.
+
+
+* How to test thoroughly?
+ Always start testing the application with valid data.
+ If the application is working for valid data, then only test for invalid data.
+ If the feature is not working for one of the invalid data we can still continue testing for some more invalid data.
+
+* Any testing can be done in three ways:
+A. Over testing/Exhaustive testing: Testing the features with same scenarios in different ways and the scenarios which doesn't make any sense is called OT.
+Eg: 100Rs, Rs100, 50ps, 100cr
+If we do the same testing it is waste of time.
+
+B. Under testing: Testing the feature with those insufficient set of scenarios is called under testing.
+Eg: 100,0,100Rs
+If we do this we are going to miss lot of defects.
+
+
+
+1. Assume there are two modules A and B in that 'A' is ready and module 'B' is not ready how will you do integration testing? (or)
+2. What do you mean by STUB and Driver?
+ STUB: Dummy module which can be used instead of real module. It can generate and receive data.
+ DRIVER: It set up the test environment between real module and the stub and also does transaction between them. It will analyse result and it will send the report.
+
+
+Why test environment should be equal to Production environment?
+ If the software in the normal environment may not work in production environment that is the reason before we move to production environment it should be tested in similar environment.
+ TE always retest only fixed bugs. Your bug should be retested by you only. You are not going to retest other bugs Owner of the bug should retest the bug owner of the feature should retest the feature.
+
+
+When do we start System testing?
+ When all the basic features are stable.
+ When minimum bunches of features are ready.
+ If test environment similar to production environment is available.
+
+
+Why do we find new bugs in the old modules?
+ Chances are there adding new feature might have introduced a new bug.
+ Chances are there fixing one bug would have introduced another bug.
+ Chances are there we would have missed in previous cycle and finding it in current cycle.
+
+
+Even though all modules are ready we continued few cycles of testing?
+There were developers fixed lot of pending bugs we may have to retest it.
+ Fixing the might create lot of problems in other features so we have to ensure that the product is not having any impact. For that we may have to test full application.
+ So we continue with some more cycles.
+
+
+When do you release product to production?
+ When all the features requested by customer is ready.
+ When the complete product is functionally stable.
+ If there are no blocker or critical bugs left out in the product.
+ When end to end scenarios are working fine.
+ There are few left out bugs but they are all are minor or major.
+ If the product is being tested in environment similar to production.
+
+
+How to develop and test and launch the web application ?
+software:
+1) Install the OS.
+2) Install the Webservers.
+3) Install the App servers.
+4) Install the Database servers.
+5) Go to development server copy the build paste it in testing server under the build.
+6) Deploy the files to the corresponding server.
+7) Start the server
+8) Send the mail to everybody saying that build is ready test it.
+
+
+What happens when you install a Patch?
+ Modified Program goes and replaces the old Program.
+ New Program smoothly goes and sits.
+ It will also go delete certain program if there is a deleted record.
+
+Who is involved in installing the software?
+Anybody from testing team anybody from development team or release engineer or build engineer or DEVOPS engineer.Continuous testing:
+Once the source code is ready the continuous integration tool creates a build and installs it in testing server the CI tool will
+trigger/run the automation scripts so the testing happens automatically the cycle repeat as per the schedule.
+Since testing s happening seamlessly this process is called Continuous testing.
+
+
+Whenever new build comes we always test in what are the priority:
+a. New feature first, because probability of catching bugs is very high.
+b. Integration between old and new module because that is also new.
+c. Retest the fixed bugs.
+d. Test the old features.
+
+
+Why we do acceptance testing?
+a. Chances are there under business pressure software company might pushed the software with lots of bugs, to find it customer does acceptance testing.
+b. Software company might have misunderstood the requirement and develop wrong feature, to find such issue we should do acceptance testing.
+c. If they move the software to the production with the critical bugs they will undergo severe loss. To protect it they do acceptance testing.
+
+
+How we do smoke testing?
+ We will only do positive testing we will not do negative testing.
+ Here we only test critical feature not all the features because time available is less if you do all this you will not able to test all the critical feature.
+
+When we do Smoke testing?
+ Whenever new builds comes we should start with smoke testing because developers are givng new build means they would have done some changes and that change might have impact on the basic features. To find that in the beginning itself we do smoke testing.
+
+ Whenever customer does Acceptance testing he should start testing with smoke testing because:
+a. To confirm that the complete software received properly.
+b. To ensure that installation happened properly.
+
+ Whenever they install the product in production to confirm that it is installed properly customer does smoke testing.
+ Chances are there developers before giving build to the testing team might do smoke testing to ensure that they are not giving broken build to testing team and making them install and test.
+
+
+Difference between smoke and sanity ?
+
+Why we do Smoke testing?
+ To check whether the product is testable: In the beginning itself if you find too many bugs that means product is not eligible for further testing. So better stop testing and spend remaining time in identifying some more scenarios.
+ Test all the basic or critical features in the beginning itself and if you find defects send it to developers in the beginning stage only. So that developers will have time to fix it.
+ We do this to check product installed properly.
+ It is a kind of health check of the software and we do this to ensure that we have not received a broken build from the developers.
+
+How we do smoke testing in the real time projects?
+In different projects they follow different approaches:
+ In some projects they will write smoke test cases whenever new build comes they execute the test cases manually.
+ Since executing smoke test cases manually is repetitive in  nature job becomes monatomic.
+ So in some projects they automate all smoke test cases, whenever new build comes they run the automation script in beginning itself and conduct smoke testing automatically.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

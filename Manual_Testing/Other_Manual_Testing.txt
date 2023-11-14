@@ -1,1 +1,61 @@
 
+
+
+
+
+
+
+Release: Starting from collecting requirement develop it, test it until we release the product to the production it is called as one
+release.
+
+Types of Application:
+A. Standalone Application: Any application used by one user is called as Standalone Application.
+Eg: Notepad, Paint brush, MS word, Ms Excel, Notepad++
+
+B. Web Application: Any application opens through the browser is called as web application.
+Web application is a type of client server application wherein browser acts like a client.
+Eg: www.gmail.com
+
+C. Client-Server Application: Client: It is a GUI provided to user so that user can input the data or user can view the data.
+
+Server: Server which Authenticates the user. Stores the data if needed. Retrieves the data.
+
+
+
+Test Cycle:
+It is effort or time spent to start and finish the testing of complete product.
+One test cycle duration can be of 3 days, 4 days or 15 days and it depends on:
+ Number of engineers in the team.
+ Size of the application.
+ The complexity of the application.
+ Also depends on if you are testing manually or automatically.
+
+Re-spins: Getting one more build within one test cycle is called as re-spin. Within one test cycle we can get 1 or n number of re-spins.
+
+
+Build: Compile all the Programs then you will get binaries, compress all the binary file then we get build.
+
+Patch(Update): Patch is a small software which contains modified program, newly added programs and record of deleted program.
+
+TEST EFFICIENCY:
+ TEST EFFICIENCY=Number of bugs found in testing divided by Total number of bugs (No of bugs found in
+testing+ No of bugs found in UAT+ No of bugs found in production)
+
+Root cause analysis: Here the team discuss about the defect or problem and causes or reason for getting the defects.
+
+Hotfix: In the production environment whenever clients find critical bugs, developer fix the bug and small team of TE will
+test it reinstall the software. Client starts using the new software this entire process is known as Hotfix.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
