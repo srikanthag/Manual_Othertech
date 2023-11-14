@@ -1,103 +1,59 @@
-What is Software Testing?
+1. What is Software Testing?
 1. The Process of identifying defects in the software is called software testing.
 2. Verifying functionality of an application against the requirement specification is called Software testing.
 3. Execution of the program with intent to finding defects in the software is called as Software testing.
 
-Why we do Software testing?
+2. Why we do Software testing?
 * Every software supports business, if there are any defects in the software it will affect Customer Business. So before we use software for the business all the bugs should be found and should be fixed that is software must be well tested.
 *  To improve the quality of the software.
 * To check whether the software is working according to the customer requirement.
 
-Why TE should never involve in fixing the defect?
+3. Why TE should never involve in fixing the defect?
  If they spend time in fixing one bug he will not get time to test remaining features.
  If he spends time in fixing one bug he will not get time to catch the remaining bugs.
  Chances are there fixing one bug might introduce lot of other bugs.
  So TE should never involve in fixing the defects.
 
-
-
-## What is the process of functional testing?
-Testers follow the following steps in the functional testing:
-* Tester does verification of the requirement specification in the software application.
-* After analysis, the requirement specification tester will make a plan.
-* After planning the tests, the tester will design the test case.
-* After designing the test, case tester will make a document of the traceability matrix.
-* The tester will execute the test case design.
-* Analysis of the coverage to examine the covered testing area of the application.
-* Defect management should do to manage defect resolving.
-
-
-## What to test in functional testing? Explain
-The main objective of functional testing is checking the functionality of the software system. It concentrates on:
-* Basic Usability: Functional Testing involves the usability testing of the system. It checks whether a user can navigate freely without any difficulty through screens.
-* Accessibility: Functional testing test the accessibility of the function.
-* Mainline function: It focuses on testing the main feature.
-* Error Condition: Functional testing is used to check the error condition. It checks whether the error message displayed
-
-
-## Explain the complete process to perform functional testing.
-* There is a need to understand the software requirement.
-* Identify test input data
-* Compute the expected outcome with the selected input values.
-* Execute test cases
-* Comparison between the actual and the computed result
-
-
-
-* Why the requirement should be numbered?
-
+4. Why the requirement should be numbered?
  There will be clarity in the requirement.
  Communication between customer, developer and testing team becomes very much smooth.
  It will be easy to understand.
  Requirement becomes measurable and traceable.
 
-
-* How to test thoroughly?
+5. How to test thoroughly?
  Always start testing the application with valid data.
  If the application is working for valid data, then only test for invalid data.
  If the feature is not working for one of the invalid data we can still continue testing for some more invalid data.
 
-* Any testing can be done in three ways:
+6. Any testing can be done in three ways:
 A. Over testing/Exhaustive testing: Testing the features with same scenarios in different ways and the scenarios which doesn't make any sense is called OT.
 Eg: 100Rs, Rs100, 50ps, 100cr
-If we do the same testing it is waste of time.
-
+    If we do the same testing it is waste of time.
 B. Under testing: Testing the feature with those insufficient set of scenarios is called under testing.
 Eg: 100,0,100Rs
-If we do this we are going to miss lot of defects.
+    If we do this we are going to miss lot of defects.
 
+7. Assume there are two modules A and B in that 'A' is ready and module 'B' is not ready how will you do integration testing? (or)
 
-
-1. Assume there are two modules A and B in that 'A' is ready and module 'B' is not ready how will you do integration testing? (or)
-2. What do you mean by STUB and Driver?
+8. What do you mean by STUB and Driver?
  STUB: Dummy module which can be used instead of real module. It can generate and receive data.
  DRIVER: It set up the test environment between real module and the stub and also does transaction between them. It will analyse result and it will send the report.
 
-
-Why test environment should be equal to Production environment?
+9. Why test environment should be equal to Production environment?
  If the software in the normal environment may not work in production environment that is the reason before we move to production environment it should be tested in similar environment.
  TE always retest only fixed bugs. Your bug should be retested by you only. You are not going to retest other bugs Owner of the bug should retest the bug owner of the feature should retest the feature.
 
-
-When do we start System testing?
- When all the basic features are stable.
- When minimum bunches of features are ready.
- If test environment similar to production environment is available.
-
-
-Why do we find new bugs in the old modules?
+10. Why do we find new bugs in the old modules?
  Chances are there adding new feature might have introduced a new bug.
  Chances are there fixing one bug would have introduced another bug.
  Chances are there we would have missed in previous cycle and finding it in current cycle.
 
-
-Even though all modules are ready we continued few cycles of testing?
+11. Even though all modules are ready we continued few cycles of testing?
 There were developers fixed lot of pending bugs we may have to retest it.
  Fixing the might create lot of problems in other features so we have to ensure that the product is not having any impact. For that we may have to test full application.
  So we continue with some more cycles.
 
-
-When do you release product to production?
+12. When do you release product to production?
  When all the features requested by customer is ready.
  When the complete product is functionally stable.
  If there are no blocker or critical bugs left out in the product.
@@ -105,8 +61,7 @@ When do you release product to production?
  There are few left out bugs but they are all are minor or major.
  If the product is being tested in environment similar to production.
 
-
-How to develop and test and launch the web application ?
+13. How to develop and test and launch the web application ?
 software:
 1) Install the OS.
 2) Install the Webservers.
@@ -117,86 +72,99 @@ software:
 7) Start the server
 8) Send the mail to everybody saying that build is ready test it.
 
+14. What happens when you install a Patch?
+Patch(Update): Patch is a small software which contains modified program, newly added programs and record of deleted program.
 
-What happens when you install a Patch?
  Modified Program goes and replaces the old Program.
  New Program smoothly goes and sits.
  It will also go delete certain program if there is a deleted record.
 
-Who is involved in installing the software?
+15. Who is involved in installing the software?
 Anybody from testing team anybody from development team or release engineer or build engineer or DEVOPS engineer.Continuous testing:
 Once the source code is ready the continuous integration tool creates a build and installs it in testing server the CI tool will
 trigger/run the automation scripts so the testing happens automatically the cycle repeat as per the schedule.
 Since testing s happening seamlessly this process is called Continuous testing.
 
-
-Whenever new build comes we always test in what are the priority:
+16. Whenever new build comes we always test in what are the priority:
 a. New feature first, because probability of catching bugs is very high.
 b. Integration between old and new module because that is also new.
 c. Retest the fixed bugs.
 d. Test the old features.
 
+17. How do you test web application?
+ WA means it will have so many components so we may have to do functionality testing.
+ WA means means there will be too many data flows so we should do integration testing.
+ It will have lot of end to end business scenarios so we should do system testing.
+ End users might use the application in different platforms so we should do compatibility testing that is we may to test application in different OS.
+In each OS we test it in different browser and in each browser test it in different versions and in each version test it in different settings like enable/disable java script, enable/disable cookies, test in different resolution.
+ Variety of user may use the application so it should be user friendly so we may have to do usability testing.
+ Multiuser can use so load on the application will be more so we may have to do performance testing.
+ It is has got secured data we have to do web security testing.
+ If the application is developed for multiple languages, we may have to do I18N and L10N testing.
+ To check whether application is user friendly for physically challenged person we will do accessibility testing.
 
-Why we do acceptance testing?
-a. Chances are there under business pressure software company might pushed the software with lots of bugs, to find it customer does acceptance testing.
-b. Software company might have misunderstood the requirement and develop wrong feature, to find such issue we should do acceptance testing.
-c. If they move the software to the production with the critical bugs they will undergo severe loss. To protect it they do acceptance testing.
+18. What is Release
+Starting from collecting requirement develop it, test it until we release the product to the production it is called as one
+release.
 
-
-How we do smoke testing?
- We will only do positive testing we will not do negative testing.
- Here we only test critical feature not all the features because time available is less if you do all this you will not able to test all the critical feature.
-
-When we do Smoke testing?
- Whenever new builds comes we should start with smoke testing because developers are givng new build means they would have done some changes and that change might have impact on the basic features. To find that in the beginning itself we do smoke testing.
-
- Whenever customer does Acceptance testing he should start testing with smoke testing because:
-a. To confirm that the complete software received properly.
-b. To ensure that installation happened properly.
-
- Whenever they install the product in production to confirm that it is installed properly customer does smoke testing.
- Chances are there developers before giving build to the testing team might do smoke testing to ensure that they are not giving broken build to testing team and making them install and test.
+19. What is Server
+Server which Authenticates the user. Stores the data if needed. Retrieves the data.
 
 
-Difference between smoke and sanity ?
-
-Why we do Smoke testing?
- To check whether the product is testable: In the beginning itself if you find too many bugs that means product is not eligible for further testing. So better stop testing and spend remaining time in identifying some more scenarios.
- Test all the basic or critical features in the beginning itself and if you find defects send it to developers in the beginning stage only. So that developers will have time to fix it.
- We do this to check product installed properly.
- It is a kind of health check of the software and we do this to ensure that we have not received a broken build from the developers.
-
-How we do smoke testing in the real time projects?
-In different projects they follow different approaches:
- In some projects they will write smoke test cases whenever new build comes they execute the test cases manually.
- Since executing smoke test cases manually is repetitive in  nature job becomes monatomic.
- So in some projects they automate all smoke test cases, whenever new build comes they run the automation script in beginning itself and conduct smoke testing automatically.
+20. Test Cycle
+It is effort or time spent to start and finish the testing of complete product.
+One test cycle duration can be of 3 days, 4 days or 15 days and it depends on:
+ Number of engineers in the team.
+ Size of the application.
+ The complexity of the application.
+ Also depends on if you are testing manually or automatically.
 
 
+21. What is Re-spins:
+Getting one more build within one test cycle is called as re-spin. Within one test cycle we can get 1 or n number of re-spins.
+
+22. What is Builds
+Compile all the Programs then you will get binaries, compress all the binary file then we get build.
+
+23. What is Root cause analysis
+Here the team discuss about the defect or problem and causes or reason for getting the defects.
+
+24. What is Hotfix
+In the production environment whenever clients find critical bugs, developer fix the bug and small team of TE will
+test it reinstall the software. Client starts using the new software this entire process is known as Hotfix.
+
+25. What is TEST EFFICIENCY:
+ TEST EFFICIENCY=Number of bugs found in testing divided by Total number of bugs (No of bugs found in
+testing+ No of bugs found in UAT+ No of bugs found in production)
+
+26. Different type of applications
+
+Types of Application:
+A. Standalone Application: Any application used by one user is called as Standalone Application.
+Eg: Notepad, Paint brush, MS word, Ms Excel, Notepad++
+
+B. Web Application: Any application opens through the browser is called as web application.
+Web application is a type of client server application wherein browser acts like a client.
+Eg: www.gmail.com
+
+C. Client-Server Application: Client: It is a GUI provided to user so that user can input the data or user can view the data.
 
 
+27. What is Alpha and Beta Testing
+ALPHA Testing: It is the testing done by TE before we give product for Acceptance testing.
+BETA Testing: It is the testing done by the end users based on their feedback product will be launched.
 
+28. Why they do beta release?
+ Company will get thousands of free user to test.
+ They use the application in variety of ways and in variety of platforms and catch bugs which we cannot simulate within testing team.
 
+29. What is Retesting ?
+Retesting is a process to check specific test cases that are found with bug/s in the final execution. Generally, testers find these bugs while testing the software application and assign it to the developers to fix it. Then the developers fix the bug/s and assign it back to the testers for verification. This continuous process is called Retesting
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+30. How will you identify areas or how you will do Impact analysis?
+ Based on the product knowledge. As TE I will be knowing how each and every module works and also I will be knowing how each and modules are related. Based on that knowledge I will be able to identify the Impact areas.
+ By preparing Impact analysis matrix we identify areas wherein we list the changes and also list all the features and also we map it.
+ By conducting Impact Analysis meeting here entire testing team meets and discuss about the list of changes, bug fixes and also associated impact region.
 
 
 

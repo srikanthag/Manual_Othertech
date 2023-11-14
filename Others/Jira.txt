@@ -1,0 +1,345 @@
+Defect Tracking Process:
+Why you should not wait for the permission of test lead to
+send bug report to development lead?
+ There will be delay in communicating defect report.
+ As a TE I will be having knowledge in depth about my
+feature so better take a decision and send report to DE, DL
+without the permission of test lead.
+Why we should keep CC for test lead?
+ TL is a one who attends all types of meeting like customer
+management and development team he should be aware of
+all thing that are there in product.
+ To get visibility that TE is working.
+As soon as you get defect immediately you should send that
+to developer. Why?
+ TE might forget the defect.
+ Someone might send your defect.
+ If the defect is sent early developers will have sufficient time
+to fix the defect.
+Severity:
+It is decided based on the impact of defect on customer business.
+There are different levels of severity:
+1. Blocker or Showstopper defect: Assume that there is a
+defect in the software and I am 100% sure that this defect
+will affect the customer business flow and also it is blocking
+TE to test the application. Such type of defect is called as
+Blocker or Showstopper defect.
+2. Critical Defect: Assume that there is a defect in the
+software and I am 100% sure that this defect will affect the
+customer business flow but not the TE to test the
+application. Such defect is called as critical defect.
+3. Major defect: Assume that there is a defect in the software
+and I am not sure that how this defect will affect the
+customer business. This kind of defect is called as Major
+defect.
+4. Minor or trivial defect: Assume that there is a defect in the
+application and I am 100% sure that this defect will not
+affect the customer business flow. This kind of defect is
+called as Minor defect.
+Priority:
+Importance given to fix the defect or how soon defect must be
+fixed by the developer.
+There are different levels of priority:
+1. High or P1: If the defect is having high priority as P1 or
+High then developer should immediately fix the defect.
+2. Medium or P2: If the defect is having priority as P2 or
+Medium then developers should fix the defect within test
+cycle or within test cycle or within some build or within a
+release.
+3. Low or P3: If the defect is having Low or P3 then developers
+can fix the defect in upcoming or within 2 to 3 release.
+4 combinations:
+a. High severity and High priority
+b. High severity and Low priority
+c. Low severity and Low priority
+d. Low severity and High priority
+HS and LP:
+1. In FB help page is navigating to blank page.
+2. Whatsapp is not installed for the 50th time.
+3. Whatsapp invite share is not working for one of the 3rd
+party application.
+LS and HP:
+1. Spelling mistake in the welcome page (Pacebook).
+2. Login becomes Loving.
+3. Alignment issue in the login page.
+Who will give severity and priority?
+TE will give the severity and priority.
+One defect will have only one severity and one priority.
+
+
+Defect Tracking:
+What is defect?
+Any feature which is not working according to the requirement
+specification is called as defect.
+Deviation from the requirement specification is called as defect.
+Why we get defect?
+1. Missing implementation
+2. Wrong implementation
+3. Extra implementation
+What is the difference between defects, bugs, error and
+failure?
+Defect: Any feature which is not working according to the
+requirement specification is called as defect.
+Bugs: It is informal name given to the defect.
+Error: Error is a mistake done in the program by the
+programmer in which we are not able to compile or run the
+program.
+1. Compile Time Error: We get this error because of syntax
+mistake.
+2. Run Time Error: We get this error because of logical
+mistake.
+Failure: Defect in the software leads to failure.
+One defect might lead to one failure or multiple failure.
+Defect Life Cycle or Bug Life Cycle:
+Explain defect life cycle?
+1. Test Engineer:
+ TE will find the defect.
+ He will login into defect tracking tool and prepare defect
+report.
+ He will put status as new/ open.
+ He will send report to DL.
+2. Development Lead:
+ He will read the report and understand the problem.
+ He will identify the developer who has done the mistake.
+ He will change status to assigned.
+ He will send report to DE.
+3. Development Engineer:
+ He will read the report and understand the problem.
+ He will go to source code and fix the defect.
+ He will change the status as fixed.
+ He will send that report to TE and also keep CC for DL.
+4. Test Engineer:
+ He will read the report and understand the problem.
+ He will retest the bug if it is fixed he will change status as
+closed.
+ If the defect is not fixed he will change the status as
+reopen.
+This entire process is called as Bug life cycle.
+Defect life cycle consists of below mentioned status.
+1. New: TE when he finds defect for the first time status will
+be “New”.
+2. Open: When developer start to work on the defect then the
+status will be in open.
+3. Reject: TE will assume feature itself as defect and he will
+send that defect to developer.
+Developer say that it is not a defect it is feature in such case
+they will change the status to Reject/ Invalid/ Not a defect.
+Why do we get Reject status?
+ Because of misunderstanding the requirement.
+ Because of extra feature.
+Note: Whenever TE calls extra feature as defect
+chances are there developers might Reject it. In such
+case Reopen the defect and ask to update the
+requirement.
+ When the build or software is wrongly configured or
+wrongly installed.: If TE install the build wrongly and
+find the defect in the software and communicate that
+to developer, developer say that it is not a defect
+because code is perfect and TE is not properly
+installed.
+ Because of referring old requirement.
+4. Duplicate: If TE finds defect and communicate defect to the
+developer if same defect is logged/ tracked by another TE
+then DE will tell that this is duplicate of old defect.
+Why we get duplicate status?
+ Because of testing common feature.
+ Old TE would have found lot of defects in that there
+are still some pending bugs which has to be fixed. If
+new TE join to same project and send‟s same bugs in
+such case developer say that it is duplicate.
+Case 1: TE will find the defect in the software if already
+same defect is present with the status as “New” in this
+case TE should never track the defect.
+Case 2: TE finds defect in the software if already same
+defect is present with the status as “Fixed” then TE
+should reopen the defect.
+Case 3: TE finds defect in the software if already same
+defect is present with the status as “Closed” in this case
+TE should track as new defect.
+How to avoid duplicate status?
+ TE when he finds defects communicate defect to
+the developers and will keep CC for TL and also
+he should keep CC for all TE who are working in
+the same project.
+ TE when he finds defect before preparing a report
+login into the defect tracking tool you should
+search for duplicate defects in DTT by entering
+certain keywords in “Advance search” TF.
+ TE when he finds defect before communicating
+that defect to DE he should cross check with
+senior TE, TL and also developers so that you can
+avoid duplicate.
+Why developer will say it as duplicate?
+ To reduce defect count.
+ To reduce duplicate effort.
+5. Cannot be fixed: Developers are accepting it as a defect but
+they are not in the position to fix the defect. In such case
+developers will change status as cannot be fixed.
+Why?
+ If there is defect present in the root of the software and
+if it not is affecting customer business, then developer
+say it as Cannot be fixed.
+ Because of the technology is not supporting: It means
+the programming language which is used to develop
+the software has got no capacity to fix the problem.
+ If the cost of fixing the defect is more than the cost of
+the bug, then developer say cannot be fixed.
+6. Postponed: Developers are accepting that it is the defect
+they want to fix it little later, in this case developer will
+change status as Postponed.
+Why?
+ If TE finds minor defect at the end of the release and if
+developer is not having sufficient time to fix that
+defect, then developer will say it as Postponed.
+ If TE find defect in the feature which is not necessary
+for the customer in the current release, then developer
+will say it as Postponed.
+ If TE finds a defect and send it to developer and
+developer will say that customer is expecting changes
+in the same feature so this defect is postponed until we
+get clarity from the customer.
+ If the defect is exposed to the internal users, then
+developer will postpone the defect.
+7. Issue is not reproducible: TE are able to see the defect
+developers are not able to see the same defect in such case
+developers say that Issue is not reproducible.
+Why?
+ Because of platform mismatch:
+o Because of OS mismatch
+o Because of browser mismatch
+o Because of browser version mismatch
+o Because of browser settings mismatch
+ Because of improper defect report.
+ Because of incorrect data.
+ Because of inconsistent defect.
+8. RFE: While testing software if test engineer finds any defect
+which is not a part of the requirement. Then developer will
+say that defect as RFE.
+Who can give RFE?
+It can be given by customer/ TE/DE/ TL.
+JIRA NOTES:
+WHAT IS JIRA?
+ANS:
+Developed by: atlassian
+Released in: 2002
+Written in: java
+Website: https://www.atlassian.com
+Description: It is a Project Management Tool, Test Management
+tool, Bug Tracking tool.
+It is used for entire project management i.e, planning, tracking,
+reporting.
+In JIRA Owner create project (SCRUM/KANBAN/BUG TRACKING
+TOOL), plan the project and invite users to perform different
+tasks of the project.
+In Jira everything is seen as an Issue.
+There are basically 4 types of issue:
+1. Epic: Collections of stories
+Example: user registration and browsing-epic1
+User profile and settings-epic 2
+2. Story: user story/requirement
+Example: login-s1
+Sign up –s2
+Home-s3
+3. Task: The user story will have many tasks for developers,
+testers respectively
+Example:
+System study of Story 1-task1
+Develop story 1-task2
+Tests story 1-task3
+4. Bug: Defect
+Note:
+owner will create :
+• • Sprint
+• • Then epic (high level requirement / collection of stories)
+• • Then story (user story/requirement, an epic will have
+multiple stories)
+• • Then task and assign it to engineers (a piece of work
+assigned to engineer related to a story, an engineer will be
+assigned with multiple task.
+Testers will create:
+• • Defects/bug
+• • Test cases
+*Once any issue is created an unique key/ticket number will be
+generated for that particular issue.
+Zephyr – extra pluggin (add on app) should be installed within
+Jira if we want to do the test management ) i.e: writing test cases,
+executing test cases, generating test execution report.
+As soon as owner pluggin zephyr we get another issue type in
+JIRA which is „test‟, to write test cases.
+1. Using JIRA as a test engineer we will do system study by
+reading the user stories which will tell us the details about the
+requirement for the modules.
+2. Using JIRA we will be able to clarify our doubts about any
+particular module or component by leaving a comment in the
+comment section under the user story.
+All the other requirements like MIRO BOARD, ZEPLIN can be
+linked in JIRA , we can directly
+give the link of these requirements and engineers can refer all the
+requirements and do the system study.
+3. Using JIRA engineers can write test cases (after zephyr
+has been added )
+Steps:
+• • Click on the „+‟ symbol and create issue window will popup
+• • Select the project>select the issue type as „test‟ and fill
+necessary details
+• • Summary: here we have to write the scenario description
+Example: validate user is able to login using valid credentials
+• • Description: Write the test data, action steps (in bullet
+points), expected result.
+• • Assignee: assign to yourself ( because we will execute the
+test cases).
+• • Epic link: select which epic this belongs to
+• • Sprint: select the sprint in which the test case belongs
+• • Then click on create button
+• • As soon as test case is created an unique ticket number is
+generated.
+Or
+• • Click on zephyr in the left navigation bar
+• • Click on create test
+• • Same window as above will appear
+• • Follow same above steps
+*After writing all the test cases we create test cycles by click on
+• • Zephyr in the left navigational bar
+• • Click on cycle summary
+• • Click on create test cycle (name it and give the start and
+end date and add the test case you want to put in that test cycle,
+and specify for which release and build(optional) it is)
+Example: test cycle name: smoke test cases
+After separating all the test cases in to different test cycles like
+(smoke or regression or system or acceptance etc)
+*After this We move on to test execution
+In test execution we will:
+• • Open the particular test cycle(which we want to execute)
+• • All the test cases will be listed
+• • Now we open each test case and we click on the execute
+button (E).
+• • After executing we can update either pass or fail
+• • We can clone a test cycle and rename it
+• • We can delete a test case
+• • We can see the execution report after executing all the test
+cases by clicking on zephyr>test metrics and test summary to see
+total executed total pass total fail.
+4. Using jira we can log defects as a tester
+• • By clicking on + button
+• • Select the project
+• • Select the issue type as „bug‟
+• • Write the defect summary in the summary text field
+• • Write the steps to reproduce in the detailed description
+text area
+• • Mention the assignee(developer)
+• • Mention the priority
+• • Mention the epic link
+• • Mention the sprint link
+• • Attach the screenshot and the screen recording in the
+attachment section
+• • Click on create button
+We can edit the created defect.
+We can change the status of the created defect.
+Jira contains four packages:
+• • Jira Core is intended as generic project management
+• • Jira Software includes the base software, including agile
+project management features (previously a separate product: Jira
+Agile)
+• • Jira Service Desk is intended for use by IT or business
+service desks.
+• • Jira Ops is intended as incident management
