@@ -61,12 +61,12 @@ The main objective of functional testing is checking the functionality of the so
 
 Types of BBT:
 1. Functionality testing
-2.Integration testing
-3.System testing
-4.Acceptance testing
-5.Smoke testing
+2. Integration testing
+3. System testing
+4. Acceptance testing
+5. Smoke testing
 6. ADHOC testing
-7.Compatibility testing
+7. Compatibility testing
 8. Usability testing
 9. Performance testing
 10. Globalization testing
@@ -79,98 +79,88 @@ Types of BBT:
 1. Functionality testing/Field level testing/Component testing:
 Testing each and every component thoroughly against requirement specification is called functionality testing. Here component means it can be any link, radio button, check box, normal buttons, scroll bar etc.... Thoroughly mean by entering all possible inputs or cases or scenarios.
 
-Why the requirement should be numbered?
+* Why the requirement should be numbered?
+
  There will be clarity in the requirement.
- Communication between customer, developer and testing
-team becomes very much smooth.
+ Communication between customer, developer and testing team becomes very much smooth.
  It will be easy to understand.
  Requirement becomes measurable and traceable.
-How to test thoroughly?
+
+
+* How to test thoroughly?
  Always start testing the application with valid data.
- If the application is working for valid data, then only test for
-invalid data.
- If the feature is not working for one of the invalid data we
-can still continue testing for some more invalid data.
- Any testing can be done in three ways:
-A. Over testing/Exhaustive testing: Testing the features with
-same scenarios in diffrent ways and the scenarios which
-doesn't make any sense is called OT.
-Eg: 100Rs, Rs100,50ps, 100cr
+ If the application is working for valid data, then only test for invalid data.
+ If the feature is not working for one of the invalid data we can still continue testing for some more invalid data.
+
+* Any testing can be done in three ways:
+A. Over testing/Exhaustive testing: Testing the features with same scenarios in different ways and the scenarios which doesn't make any sense is called OT.
+Eg: 100Rs, Rs100, 50ps, 100cr
 If we do the same testing it is waste of time.
-B. Under testing: Testing the feature with those insufficient
-set of scenarios is called under testing.
+
+B. Under testing: Testing the feature with those insufficient set of scenarios is called under testing.
 Eg: 100,0,100Rs
 If we do this we are going to miss lot of defects.
-C. Optimized testing: Testing the application with those
-scenarios which make sense is called optimized testing.
-a. Positive functionality testing: Testing the application by
-entering valid or expected data is called as positive FT.
-b. Negative functionality testing: Testing the application by
-entering invalid or unexpected data is called as negative FT.
+
+C. Optimized testing: Testing the application with those scenarios which make sense is called optimized testing.
+a. Positive functionality testing: Testing the application by entering valid or expected data is called as positive FT.
+b. Negative functionality testing: Testing the application by entering invalid or unexpected data is called as negative FT.
+
 Note:
  TE should never assume or propose the requirement.
- If you have any queries or question in the requirement
-interact with project manager, developer, business analyst
-and customer.
+ If you have any queries or question in the requirement interact with project manager, developer, business analyst and customer.
 
-================================================================================================================
+==============================================================================================================
 
-2. Integration testing: Testing the data flow or interfaces
-between the modules is called as Integration testing.
-How to do Integration testing
+2. Integration testing:
+Testing the data flow or interfaces between the modules is called as Integration testing.
+
+* How to do Integration testing
 A. Understanding the application is very important
 a. Understand in depth how each and every module works.
 b. Also understand how each and every module is related.
+
 B. Identify the scenarios.
+
 C. Prioritize the scenarios.
+
 D. Document the scenarios as per prioritization.
+
 E. Execute the scenarios.
+
 F. If you find any defect , communicate defect to the developer.
- Positive integration testing: Enter the amount which is
-less than or equal to the balance and if it is received by the
-receiver then it is called Positive integration testing.
- Negative integration testing: Enter the amount which is
-more than the balance if the receiver is not able to receive
-the amount then we can say that Negative integration
-testing is passed.
+
+
+* Positive integration testing: Enter the amount which is less than or equal to the balance and if it is received by the receiver then it is called Positive integration testing.
+* Negative integration testing: Enter the amount which is more than the balance if the receiver is not able to receive the amount then we can say that Negative integration testing is passed.
+
+
 Note:
 A. Prioritization is important in each and every stage.
- That is open the application and decide which feature to be
-tested first and later.
- Go to the first feature and select which component to be
-tested first and later.
- Go to first component and decide what value to enter first
-and later.
-B. Between two modules either will be doing both positive and
-negative integration testing or only positive integration
-testing. It just depends on how the features or modules are
-related to each other.
-C. Don't apply same rule everywhere because testing logic
-varies from feature to feature.
-D.Focusing on the feature is very important. Completely test
-one feature then only move on the other feature that is take
-one feature do functionality testing take same feature and
-do through integration testing then only move on to other
+ That is open the application and decide which feature to be tested first and later.
+ Go to the first feature and select which component to be tested first and later.
+ Go to first component and decide what value to enter first and later.
+
+B. Between two modules either will be doing both positive and negative integration testing or only positive integration testing. It just depends on how the features or modules are related to each other.
+
+C. Don't apply same rule everywhere because testing logic varies from feature to feature.
+
+D.Focusing on the feature is very important. Completely test one feature then only move on the other feature that is take one feature do functionality testing take same feature and do through integration testing then only move on to other
 features.
-E. Between two features we may do integration testing in both
-ways or one way or we may not do integration testing at all.
-It only depends on how features are related.
+
+E. Between two features we may do integration testing in both ways or one way or we may not do integration testing at all. It only depends on how features are related.
+
+
 Types of Integration testing:
-I. Incremental integration testing: Incrementally adding the
-modules and testing the data flow between modules is
+I. Incremental integration testing: Incrementally adding the modules and testing the data flow between modules is
 called Incremental integration testing.
-a. Top-down: Incrementally adding the modules and testing the
-data flow between modules but make sure that modules which
-you adding should be child of previous module.
-b. Bottom-up: Incrementally adding the modules and testing the
-data flow between modules but make sure that modules which
-you adding should be parent of previous module.
-Note: When the data flow is very complex and it is difficult to
-identify which is parent module and which is child module then
+
+a. Top-down: Incrementally adding the modules and testing the data flow between modules but make sure that modules which you adding should be child of previous module.
+b. Bottom-up: Incrementally adding the modules and testing the data flow between modules but make sure that modules which you adding should be parent of previous module.
+
+Note: When the data flow is very complex and it is difficult to identify which is parent module and which is child module then
 we go for Non-Incremental integration testing.
-II. Non-Incremental integration testing: Combining all the
-modules at a shot and testing the data flow between the
-modules is called as Non-Incremental integration testing.
+
+II. Non-Incremental integration testing: Combining all the modules at a shot and testing the data flow between the modules is called as Non-Incremental integration testing.
 Drawbacks:
 a. Chances are there we might miss some data flows.
 b. Chances are there we might repeat same testing because of
