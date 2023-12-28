@@ -4,7 +4,7 @@ continuous integration and continuous delivery
 
 Setup
 download java version 17
-download jenkins.war filr
+download jenkins.war file
 run cmd from download and run command "java -jar jenkins.war"
 http://localhost:8080/
 add password from cmd where ran "java -jar jenkins.war"
