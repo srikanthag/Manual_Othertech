@@ -1,5 +1,40 @@
-Git: :Local repository
-Git hub: Remote repository
+""" Git """
+
+Git: : It is a configuration management tool. Local repository
+GitHub: Remote repository
+
+Git Setup:
+1. Open "Git bash" in folder where we want store all our project
+2. Initiate: Initialize the repository
+    git init
+3. Git to GitHub connection
+    git remote add origin "URL of git hub project"
+4. Git pull: Pull the code from repository
+    git pull origin master
+5. Git status: List of modified and created files
+    git status
+6. Git add: To add files
+    single file: git add text.py
+    all files: git add .
+7. Git commit: Commit before push
+    git commit -m "commit message"
+8. Git Log: See all the commits in logs
+    git log
+9. Git push: Push the files to repository
+    git push origin master
+10.
+
+
+
+
+
+
+
+
+
+
+
+
 
 git init : initiate the local repository
 git remote add origin "https://github.com/srikanthag/python.git"
