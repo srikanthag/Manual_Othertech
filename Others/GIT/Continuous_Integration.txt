@@ -1,0 +1,25 @@
+Continuous integration:
+Continuous Integration (CI) is a software development practice that aims to improve the development process by automating the building, testing, and integration of code changes from multiple contributors. The primary goal is to detect and address integration issues early in the development cycle, ensuring that the software remains in a consistently functional state. CI is often a crucial part of a broader strategy known as Continuous Delivery (CD) or Continuous Deployment (CD).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,9 +25,14 @@ Git Setup:
 10.
 
 
+Key Differences between SSH and HTTPS:
+4.1. Authentication Method:
+SSH: Uses SSH keys for authentication. Users generate a key pair (public and private keys), with the public key stored on GitHub, and the private key kept on their local machine.
+HTTPS: Requires either a username and password or a personal access token (PAT) for authentication. PATs are tokens generated from your GitHub account.
 
-
-
+4.2 . Cloning and Authentication:
+SSH: When cloning a repository using SSH, you don’t need to enter your credentials each time. Authentication is handled automatically using your SSH key.
+HTTPS: Requires you to enter your GitHub credentials (username and password or PAT) each time you interact with a repository.
 
 
 
