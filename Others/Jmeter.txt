@@ -55,7 +55,7 @@ The the result in the form of tables, graphs, trees or simple text in some log f
 Working of configuration elements is quite similar to those of samplers.However, it does not send requests but it allows you to
 modify the requests made by the samplers.
 
-It is a simple element where you can collects the corporate configuration values of all samplers like webserver's hostname or database
+It is a simple element where you can collect the corporate configuration values of all samplers like webserver's hostname or database
 url etc.
 
 6. Timers
@@ -65,6 +65,27 @@ JMeter sends requests without applying any delay between each sampler/request. I
 without any delay, it will be overloaded. This not exactly what you want. You can add a timer element which will permit you to define
 a period to wait between each request.
 
+Constant Timer:
+This timer introduces a constant pause between each sampler.
+Use cases: When you want to simulate a constant delay between each request, regardless of the load or response times.
+Gaussian Random Timer:
+This timer adds a delay that follows a Gaussian distribution (also known as normal distribution) around a specified mean with a given deviation.
+Use cases: When you want to simulate a more realistic distribution of user think times or delays between requests.
+Uniform Random Timer:
+This timer adds a delay that follows a uniform distribution between a specified minimum and maximum value.
+Use cases: When you want to simulate a random delay between requests within a specified range.
+Poisson Random Timer:
+This timer adds delays that follow a Poisson distribution with a specified mean delay time.
+Use cases: When you want to simulate random, but more frequent, delays between requests, such as in scenarios with bursty traffic.
+Synchronizing Timer:
+This timer allows you to synchronize a group of threads to start their requests at precisely the same time.
+Use cases: When you need to simulate concurrent user behavior, such as multiple users submitting a form simultaneously.
+Constant Throughput Timer:
+This timer adjusts the delay between each request to achieve a target throughput (requests per minute).
+Use cases: When you want to maintain a constant load on the server, regardless of the number of concurrent users.
+Precise Throughput Timer:
+This timer allows you to precisely control the throughput of your test by specifying the desired number of requests per minute.
+Use cases: When you need fine-grained control over the throughput of your test to accurately simulate real-world scenarios.
 
 """ Create first test plan """
 1. Start jmeter
