@@ -1,0 +1,14 @@
+SQL ( STRUCTURED QUERY LANGUAGE )
+
+Database is a place or a medium in which we store the data in a Systematic and organized manner.
+
+DATABASE MANAGEMENT SYSTEM (DBMS) : It is a software which is used to maintain and manage The database
+
+RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS):
+. We use SQL to communicate or interact with RDBMS
+. RDBMS stores the data in the form of Tables.
+
+
+
+
+

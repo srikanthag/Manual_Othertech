@@ -36,11 +36,6 @@ HTTPS: Requires you to enter your GitHub credentials (username and password or P
 
 
 
-
-
-
-
-
 git init : initiate the local repository
 git remote add origin "https://github.com/srikanthag/python.git"
 git pull origin master

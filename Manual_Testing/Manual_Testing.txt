@@ -145,22 +145,22 @@ When do we start System testing?
 
 4. Acceptance Testing:
 Approach 1(Definition):
-It is end to end testing done by the engineer sitting at the customer place where in they take end to end real time business scenarios and check whether software is capable of handling it or not.
+It is end-to-end testing done by the engineer sitting at the customer place where in they take end to end real time business scenarios and check whether software is capable of handling it or not.
 
 
 Approach 2:
-It is end to end testing done by the end users wherein they use the software for particular period of time and check whether software is capable of handling all possible real time situation.
+It is end-to-end testing done by the end users wherein they use the software for particular period of time and check whether software is capable of handling all possible real time situation.
 
 Approach 3:
-It is end to end testing done by our own engineer sitting at the customer place wherein they refer user scenarios given by the
+It is end-to-end testing done by our own engineer sitting at the customer place wherein they refer user scenarios given by the
 customer and check whether software is capable of handling it.
 
 Approach 4:
-It is end to end testing done by test engineer sitting at our place wherein they refer user scenarios given by the customer and
+It is end-to-end testing done by test engineer sitting at our place wherein they refer user scenarios given by the customer and
 check whether software is capable of handling all real time business scenarios.
 
 Why we do acceptance testing?
-a. Chances are there under business pressure software company might pushed the software with lots of bugs, to find it customer does acceptance testing.
+a. Chances are there under business pressure software company might push the software with lots of bugs, to find it customer does acceptance testing.
 b. Software company might have misunderstood the requirement and develop wrong feature, to find such issue we should do acceptance testing.
 c. If they move the software to the production with the critical bugs they will undergo severe loss. To protect it they do acceptance testing.
 
@@ -175,12 +175,12 @@ testing is done to check that bugs have been fixed after the build. Smoke testin
 testing can't be documented and is unscripted.
 
 
-Sanity testing
+Sanity testing:
 Sanity testing is performed to ensure that the code changes that are made are working as properly.
 
 Example of Sanity Testing:
 In an e-commerce project, main modules are login page, home page, user profile page, user registration etc. There is a defect in
-the login page when the password field accepts less than four alpha numeric characters and the requirement mentions that
+the login page when the password field accepts less than four alphanumeric characters and the requirement mentions that
 this password field should not be below eight characters. Hence, the defect is reported by the testing team to the development
 team to resolve it. It is unscripted and undocumented
 
@@ -213,13 +213,13 @@ In different projects they follow different approaches:
  So in some projects they automate all smoke test cases, whenever new build comes they run the automation script in beginning itself and conduct smoke testing automatically.
 ============================================================================================================
 
-6. Adhoc or Monkey Testing
+6. Adhoc or Monkey Testing:
 Testing the basic or critical feature of an application before we do thorough testing is called as Adhoc testing wherein we don't refer any formal documents like test scenarios/ test cases or requirements.
 
 
 Why we do Adhoc testing?
  When the product is launched end user might use the application randomly because of that he might get defects. To prevent such issues TE only test the application randomly and find bugs.
- If you follow the requirement and test the application number of bugs you gonna catch is very less. So do not follow the requirement come up with creative scenarios which are out of requirement and test the application.
+ If you follow the requirement and test the application number of bugs you going to catch is very less. So do not follow the requirement come up with creative scenarios which are out of requirement and test the application.
  We do this somehow increase the bug count.
  We do this somehow improve the test coverage.
  We do this to check whether the software is working according to implicit requirement.
@@ -237,7 +237,7 @@ When we do Adhoc testing?
 Testing the application in different hardware and software environment is called as compatibility testing.
 
 Reasons for Compatibility testing
- Chances are there developers develop software in one platform (windows 10), test engineer will test the application in the same platform (windows 10) when product is launched end user use the application different platform(Win8/9). Software which works in one platform may not work in other platform because there might be defect. Due to this end user will get reduced and customer will undergo loss. To avoid this we should do compatibility testing.
+ Chances are there developers develop software in one platform (Windows 10), test engineer will test the application in the same platform (Windows 10) when product is launched end user use the application different platform(Win8/9). Software which works in one platform may not work in other platform because there might be defect. Due to this end user will get reduced and customer will undergo loss. To avoid this we should do compatibility testing.
  We do compatibility testing to check whether features are working consistently in all the platforms or not.
  Chances are there developers wil write common code and claims it works in all the platform. Or developers would have written common code and says that it works in respective platform. So TE should test in every platform and check whether it works or not.
  Different hardware and software renders GUI in different ways. So we may to test whether our software is working for all the combination or not.
