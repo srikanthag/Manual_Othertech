@@ -1,0 +1,41 @@
+Scheduling Jenkins jobs can be done through the built-in functionality that Jenkins provides. You can set up cron-like schedules for jobs using the "Build Triggers" feature. This is useful if you want to run a Jenkins job at specific intervals (e.g., daily, weekly, hourly, etc.).
+
+Here’s how you can schedule a Jenkins job:
+
+Example 1: Schedule a Jenkins Job Using Cron Syntax
+1. Navigate to your Jenkins Job: Go to the Jenkins dashboard and click on the job you want to schedule.
+   
+2. Configure the Job: Click on the Configure option on the left-hand side.
+
+3. Scroll to Build Triggers: Look for the Build Triggers section.
+
+4. Enable Cron Schedule:
+   - Check the box next to Build periodically.
+
+5. Set the Cron Expression:
+   - You'll see a text box where you can enter a cron expression. 
+   - The syntax follows the cron format `MIN HOUR DOM MON DOW` (Minute, Hour, Day of Month, Month, Day of Week).
+
+Example of a Cron Schedule:
+To run a job every day at 2:30 AM, you would use:
+
+30 2 * * *
+
+This means:
+- 30 = 30th minute
+- 2 = 2nd hour (i.e., 2 AM)
+- \* = every day of the month
+- \* = every month
+- \* = every day of the week
+
+#Example Schedules:
+1. Every 15 minutes:
+   */15 * * * *
+
+2. Every Sunday at 5 AM:
+   0 5 * * 0
+
+3. Every first day of the month at midnight:
+   0 0 1 * *
+
+

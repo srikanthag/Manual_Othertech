@@ -1,0 +1,125 @@
+Setup
+download java version 17
+download jenkins.war file
+run cmd from download and run command "java -jar jenkins.war"
+http://localhost:8080/
+add password from cmd where ran "java -jar jenkins.war"
+install plugins
+
+user name: admin
+password: srikanth
+url: http://localhost:8080/
+
+
+
+Execute windows batch command
+
+================================================================
+To run a simple Python "Hello World" program using Jenkins, follow these steps to set up Jenkins and configure it to run the Python script:
+
+Step 1: Install Jenkins
+
+1. Install Jenkins: If you don't have Jenkins installed, you can install it by following the instructions from the [official Jenkins website](https://www.jenkins.io/doc/book/installing/).
+   
+   On Ubuntu, for example, you can install Jenkins using:
+   
+   sudo apt update
+   sudo apt install openjdk-11-jdk
+   sudo apt install jenkins
+   sudo systemctl start jenkins
+   sudo systemctl enable jenkins
+
+
+   Jenkins typically runs on port 8080 by default, so you can access it in your browser by visiting `http://localhost:8080`.
+
+2. Unlock Jenkins: During the installation, Jenkins will generate a setup wizard. You'll need to get the unlock key from the file located at:
+
+   /var/lib/jenkins/secrets/initialAdminPassword
+
+   Copy and paste that password into the setup wizard in your browser to complete the installation.
+
+3. Install Recommended Plugins: Once unlocked, follow the setup wizard steps and install the recommended plugins.
+
+
+
+Step 2: Install Python on Jenkins Server
+
+Ensure that Python is installed on the machine where Jenkins is running.
+
+1. Install Python (if it's not already installed):
+   - For Ubuntu:
+bash
+     sudo apt update
+     sudo apt install python3
+     sudo apt install python3-pip
+
+
+   - For Windows: Download and install Python from the [official website](https://www.python.org/downloads/).
+
+2. Install Python dependencies:
+   Make sure Python and `pip` are available on the Jenkins server. You can verify this by running:
+   
+   python3 --version
+   pip3 --version
+
+
+
+Step 3: Create a Simple Python "Hello World" Script
+
+1. Create a simple Python script (`hello_world.py`) with the following content:
+   print("Hello, World!")
+
+
+
+Step 4: Set Up a Jenkins Job to Run Python Script
+
+1. Open Jenkins: Go to the Jenkins dashboard (usually `http://localhost:8080`).
+
+2. Create a New Job:
+   - From the Jenkins dashboard, click on New Item.
+   - Select Freestyle project and give it a name, for example, "PythonHelloWorld".
+   - Click OK.
+
+3. Configure the Job:
+   - Under the Build section, click Add build step and select Execute shell (for Linux/macOS) or Execute Windows batch command (for Windows).
+
+   - For Linux/macOS, in the shell command, write:
+bash
+     python3 /path/to/your/script/hello_world.py
+
+     Replace `/path/to/your/script/hello_world.py` with the actual path to your Python script.
+
+   - For Windows, in the batch command, write:
+bash
+     python C:\path\to\your\script\hello_world.py
+
+     Again, replace `C:\path\to\your\script\hello_world.py` with the actual path to your Python script.
+
+4. Save the Job: Once the job is configured, click Save.
+
+
+
+Step 5: Run the Job
+
+1. On the job page, click Build Now to run the job.
+2. You should see the console output where the "Hello, World!" message will be printed.
+
+
+
+Step 6: (Optional) Check Console Output
+
+- After the job finishes, click on the build number under Build History.
+- Click on Console Output to view the log, where you should see the message:
+  
+  Hello, World!
+  
+
+
+Step 7: Troubleshooting
+
+- If you encounter issues, make sure that:
+  - Python is correctly installed and accessible from Jenkins.
+  - The script path is correct.
+  - You have the correct permissions to run Python scripts.
+
+And that's it! You've set up a Jenkins job to run a simple Python "Hello World" program.
