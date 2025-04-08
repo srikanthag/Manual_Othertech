@@ -1,0 +1,56 @@
+To set up email notifications in Jenkins, follow these steps:
+
+1. Configure Email Settings in Jenkins
+Before you can send email notifications, you need to configure your email server in Jenkins:
+
+1. Go to Jenkins Dashboard.
+2. Click on "Manage Jenkins" from the left sidebar.
+3. Select "Configure System."
+4. Scroll down to the "E-mail Notification" section.
+5. In the SMTP server field, enter the SMTP server address (e.g., `smtp.gmail.com` for Gmail).
+6. Configure other settings:
+   - SMTP port (usually 587 for Gmail or 465 for SSL).
+   - Use SMTP Authentication if required, then enter your username and password.
+   - From E-mail Address: Specify the sender's email (e.g., `jenkins@example.com`).
+   - Reply-To Address (optional): Specify if you want replies to be sent to a specific email address.
+   - Use SSL if necessary for your SMTP server.
+
+   Example for Gmail:
+   - SMTP server: `smtp.gmail.com`
+   - SMTP port: `465`
+   - Use SMTP Authentication: Checked
+   - Username: Your Gmail email (e.g., `your-email@gmail.com`)
+   - Password: Your Gmail password (or app-specific password if you use 2FA)
+   - SSL: Checked
+
+7. Click Save.
+
+2. Set Up Email Notification in Jenkins Job
+Next, configure your Jenkins job to send email notifications based on build success or failure:
+
+1. Open the Jenkins job for which you want to enable email notifications.
+2. Click "Configure".
+3. Under the "Post-build Actions" section, click "Add post-build action".
+4. Select "E-mail Notification".
+   - In the "Recipients" field, add the email addresses where the notifications should be sent (e.g., `user@example.com`).
+   - You can also configure "Advanced" settings to set additional parameters (like Subject, Content, etc.).
+5. Optionally, you can enable "Editable Email Notification" if you want more control over the email content and subject.
+
+3. Email Notification Triggers
+You can also define specific triggers for when Jenkins should send emails. Common triggers are:
+- Always (send email after every build, regardless of the result).
+- Failure (send email only if the build fails).
+- Success (send email only if the build is successful).
+- Unstable (send email when the build is unstable).
+- Not Built (send email if the build is not executed).
+
+4. Test the Email Setup
+To test whether the email notifications are working:
+- Trigger a build (either manually or by pushing changes).
+- Check if the emails are sent and received according to the configured settings.
+
+Troubleshooting:
+- Check Jenkins logs: If the email isn’t sent, check the logs under Manage Jenkins > System Log for any SMTP-related errors.
+- SPF/DKIM: Some email services (e.g., Gmail) may block emails from Jenkins if the domain doesn't pass SPF or DKIM checks. Make sure your Jenkins domain is correctly set up for email delivery.
+
+That should set up basic email notifications in Jenkins! Let me know if you need help with specific configurations.

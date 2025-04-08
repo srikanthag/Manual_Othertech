@@ -1,0 +1,96 @@
+Working with GitHub in Jenkins enables you to automate Continuous Integration (CI) and Continuous Delivery (CD) for your projects hosted on GitHub. Jenkins can be configured to automatically pull code from a GitHub repository, build the code, run tests, and deploy it. Here's a comprehensive guide to help you work with GitHub in Jenkins:
+
+1. Install Necessary Plugins in Jenkins
+
+Before integrating GitHub, ensure you have the required plugins installed in Jenkins:
+
+1. Git Plugin: This allows Jenkins to interact with Git repositories.
+2. GitHub Plugin: This helps in integrating Jenkins with GitHub, including the ability to trigger builds based on GitHub events like pushes or pull requests.
+3. GitHub Branch Source Plugin (optional, but useful for GitHub Organizations and managing multiple repositories).
+
+#Steps to install plugins:
+- Go to Manage Jenkins > Manage Plugins.
+- In the Available tab, search for Git and GitHub plugins and install them.
+
+2. Create a New Job or Pipeline in Jenkins
+
+You can either create a Freestyle Project or a Pipeline Project. A pipeline project provides more flexibility, especially for complex CI/CD workflows.
+
+#For a Freestyle Project:
+- From the Jenkins Dashboard, click New Item.
+- Enter a name for your project, and choose Freestyle Project.
+- Click OK.
+
+#For a Pipeline Project:
+- From the Jenkins Dashboard, click New Item.
+- Enter a name for your project, and choose Pipeline.
+- Click OK.
+
+3. Configure GitHub Repository in Jenkins
+
+#In a Freestyle Project:
+1. Source Code Management:
+   - Inside the job configuration page, scroll down to the Source Code Management section.
+   - Select Git.
+   - In the Repository URL, enter your GitHub repository's URL (you can use HTTPS or SSH). Example for HTTPS:
+     
+     https://github.com/username/repository.git
+     
+   - If you're using a private repository, you’ll need to add Credentials for authentication.
+     - Click Add next to Credentials, select Username with password or Personal Access Token, and enter your GitHub credentials.
+
+2. Build Triggers:
+   - In the Build Triggers section, you can choose to trigger builds based on GitHub events (e.g., pushes or pull requests).
+   - To trigger builds when code is pushed to GitHub, select GitHub hook trigger for GITScm polling. This will allow Jenkins to listen for webhook triggers from GitHub.
+
+#For a Pipeline Project:
+1. Pipeline Definition:
+   - Scroll to the Pipeline section.
+   - Under Definition, select Pipeline script from SCM.
+   - Select Git as the SCM.
+   - Enter the GitHub repository URL and provide credentials if necessary.
+
+2. Pipeline Script:
+   - In the Script Path field, specify the location of your Jenkinsfile (typically in the root directory of your repository).
+   - The `Jenkinsfile` defines the pipeline steps (like build, test, and deploy).
+
+4. Set Up Webhooks in GitHub
+
+To trigger builds automatically when there are changes in your GitHub repository, set up a webhook in GitHub:
+1. Go to your GitHub repository.
+2. Click on Settings > Webhooks.
+3. Click Add webhook.
+4. In the Payload URL field, enter your Jenkins server URL followed by `/github-webhook/`. Example:
+   
+   http://<JENKINS_URL>/github-webhook/
+   
+5. Set Content type to `application/json`.
+6. Under Which events would you like to trigger this webhook?, select the events you want to trigger the webhook. Typically, select Push events to trigger the build on code pushes, or select Pull request events to trigger builds on PR creation.
+7. Click Add webhook.
+
+6. Run and Verify the Integration
+
+- Manual Build: You can manually trigger the job by clicking Build Now on the Jenkins job page.
+- Automatic Build: After you push changes to your GitHub repository, the webhook should automatically trigger a build in Jenkins.
+  
+7. Monitor the Jenkins Build Logs
+
+After a build is triggered, you can monitor the build’s progress:
+- In Jenkins, go to Build History and click on the most recent build.
+- View the Console Output to see detailed logs of the build process.
+
+8. Advanced Configurations (Optional)
+
+#GitHub Organization Plugin:
+If you're working with multiple repositories, the GitHub Organization Plugin allows Jenkins to automatically discover repositories within a GitHub organization and create jobs for them. This is useful for managing large teams or organizations.
+
+#Multi-Branch Pipelines:
+With Jenkins' Multibranch Pipeline, you can automatically create a pipeline for each branch or pull request in your GitHub repository. This is useful if you want to run separate pipelines for different branches of your project.
+
+9. Troubleshooting
+- Webhook Not Triggering: Ensure your Jenkins server is accessible from GitHub. You can test the webhook by pushing a commit and checking the GitHub webhook delivery logs for errors.
+- Authentication Errors: Ensure that the correct credentials are used for the GitHub repository. Use a Personal Access Token (PAT) if you're using HTTPS with private repositories.
+  
+Conclusion
+
+Working with GitHub in Jenkins automates much of your CI/CD pipeline, enabling automatic builds and tests on changes pushed to your repository. By setting up Jenkins to pull from GitHub, configuring webhooks, and defining build steps, you can create an efficient and streamlined development workflow.
